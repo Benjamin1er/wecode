@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Navbar*/
+
+h1 {
+  /* text-align: center; */
+  font-size: 2em;
+}
+
+/*En tête du site*/
+p {
+  text-align: center;
+}
+
+/*Footer*/
+footer {
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+}
+
+ul {
+  background: linear-gradient(to bottom, #333, #626262);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  height: auto;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+/*Articles*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Pages Web*/
+
+/*Contact*/
+
+form {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 20px;
+}
+
+label {
+  line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+input[type="submit"] {
+  background: rgb(71, 180, 199);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+#message {
+  height: 100px;
+}
