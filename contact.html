@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>Contactez Nous</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Acceuil</a></li>
+        <li><a href="./dev-web.html">Web</a></li>
+        <li><a href="./video-games.html">Jeux Videos</a></li>
+        <li><a href="./software.html">Logiciels</a></li>
+        <li><a href="./robotic.html">Robotique</a></li>
+        <li><a href="./ai.html">Intelligence artificielle</a></li>
+        <li><a href="./blockchain.html">Blockchain</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <img src="assets/header.jpg" alt="ContactUs picture" />
+      <h3>Contactez Nous</h3>
+      <section id="contact">
+        <form id="contactForm">
+          <label for="name">First name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value="Enter your name"
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="example@mail.com"
+          /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message"></textarea>
+          <br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="#">Mentions légales et Politique de confidentialité</a>
+    </footer>
+  </body>
+</html>
