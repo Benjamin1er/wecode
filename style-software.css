@@ -1,0 +1,4 @@
+p:first-child::first-letter {
+    font-size: 10rem;
+    font-weight: bold;
+}
