@@ -36,9 +36,18 @@ p {
 /*Footer & Navbar*/
 
 /* footer {
-  border-bottom: 1px solid #000000;  
+  /*border-bottom: 1px solid #000000;  
 } */
 
+.politics {
+  text-align: center;
+}
+
+.contactUs {
+  padding: 30px;
+  font-size: 40px;
+  text-decoration: underline;
+}
 
 
 .nav-menu {
@@ -128,8 +137,18 @@ input[type="submit"] {
   color: white;
   border: none;
   padding: 5px 10px;
+  width: 70px;
+  height: 30px;
 }
 
 #message {
-  height: 100px;
+  height: 120px;
+}
+
+#contact {
+  padding: 30px;
+}
+
+#contactForm {
+  width: 400px;
 }
