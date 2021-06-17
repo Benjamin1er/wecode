@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) 
+{ #rob-header-picture {
+width: 100%;
+height: auto;}
+}
+
+#rob-header-picture {
+    width: 600px;}
+
+    
+#imgC {
+    padding: 10px;
+    max-width: 350px;
+    max-height: 350px;
+  }
+  @media only screen and (max-width: 600px){
+   #imgC {width: 100%;
+      height: auto;
+  }
+  }
+  
+  @media only screen and (max-width: 600px) 
+    { #imgH2 {
+    width: 100%;
+      height: auto;}
+  }
+  
+  #unimate {
+    width: 600px;}
+  
+    @media only screen and (max-width: 600px){
+     #unimate {width: 100%;
+      height: auto;
+    }
+    }
