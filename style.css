@@ -1,4 +1,5 @@
 * {
+  font-family: 'Roboto';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,18 +29,6 @@ h1 {
 h2 {
   text-align: center;
 }
-
-p {
-  text-align: center;
-}
-
-/*Footer & Navbar*/
-
-/* footer {
-  border-bottom: 1px solid #000000;  
-} */
-
-
 
 .nav-menu {
   background: linear-gradient(to bottom, #333, #626262);  
@@ -132,4 +121,37 @@ input[type="submit"] {
 
 #message {
   height: 100px;
+}
+
+/* ---------------------------------page software ------------------------------------ */
+
+
+.header {
+  font-size: 2rem;
+}
+
+.intro {
+  text-align: center;  
+}
+
+h2 {
+  margin: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    font-size: 2rem;
+    background-color: rgb(216, 216, 216);
+  }
+  
+  .article {
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    max-width: 90%;
+    background-color: #fff;
+  }
+  .article {
+    transition: 0.5s;
+    max-width: 75%; 
+  }
 }
