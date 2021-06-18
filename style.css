@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
+  width: 100%;
 }
 
 header {
@@ -13,6 +14,7 @@ header {
 h1 {
   text-align: center;
   font-size: 2em;
+  padding: 20px 4%;
 }
 
 /*Articles*/
@@ -25,18 +27,33 @@ h1 {
 
 h2 {
   text-align: center;
-  padding: 30px;
-  font-size: 40px;
+  font-size: 2em;
+  padding: 20px 4%;
 }
-
 h3 {
-  padding: 25px;
+  text-align: center;
+  font-size: 25px;
 }
 
 p {
   text-align: center;
+  padding: 20px 4%;
+  font-size: 30px;
 }
-
+.title-bloc {
+  padding: 40px 4%;
+}
+article {
+  padding: 5%;
+}
+.text-article {
+  font-size: 16px;
+  text-align: left;
+}
+.suite-article {
+  text-decoration: none;
+  font-size: 20px;
+}
 /*Footer & Navbar*/
 
   
