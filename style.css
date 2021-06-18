@@ -32,16 +32,10 @@ h1 {
   align-items: center;
 }
 
-h2 {
-  text-align: center;
-  font-size: 2em;
-  padding: 20px 4%;
-}
 h3 {
   text-align: center;
   font-size: 25px;
 }
-
 
 h2 {
   text-align: center;
@@ -64,10 +58,6 @@ article {
 }
 /*Footer & Navbar*/
 
-  
-/* footer {
-  border-bottom: 1px solid #000000;  
-} */
 
 .politics {
   text-align: center;
