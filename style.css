@@ -2,19 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/*En tête du site*/
-
-.header-picture {
   width: 100%;
-	height: auto;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 h1 {
   text-align: center;
   font-size: 2em;
+  padding: 20px 4%;
 }
 
 /*Articles*/
@@ -27,19 +27,49 @@ h1 {
 
 h2 {
   text-align: center;
+  font-size: 2em;
+  padding: 20px 4%;
+}
+h3 {
+  text-align: center;
+  font-size: 25px;
 }
 
 p {
   text-align: center;
-  margin: 20px 2.5%
+  padding: 20px 4%;
+  font-size: 30px;
 }
-
+.title-bloc {
+  padding: 40px 4%;
+}
+article {
+  padding: 5%;
+}
+.text-article {
+  font-size: 16px;
+  text-align: left;
+}
+.suite-article {
+  text-decoration: none;
+  font-size: 20px;
+}
 /*Footer & Navbar*/
 
+  
 /* footer {
   border-bottom: 1px solid #000000;  
 } */
 
+.politics {
+  text-align: center;
+}
+
+.contactUs {
+  padding: 30px;
+  font-size: 40px;
+  text-decoration: underline;
+}
 
 
 .nav-menu {
@@ -79,7 +109,7 @@ p {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition#4080d4.3s ease-in-out;
+  -webkit-transition: #4080d4.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: rgb(0, 4, 255);
 }
@@ -102,6 +132,7 @@ li a:hover {
 }
 
 /*Pages Web*/
+
 
 /*Contact*/
 
@@ -129,8 +160,18 @@ input[type="submit"] {
   color: white;
   border: none;
   padding: 5px 10px;
+  width: 70px;
+  height: 30px;
 }
 
 #message {
-  height: 100px;
+  height: 120px;
+}
+
+#contact {
+  padding: 30px;
+}
+
+#contactForm {
+  width: 400px;
 }
