@@ -1,7 +1,14 @@
 * {
+  font-family: 'Roboto';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+/*En tête du site*/
+
+.header-picture {
   width: 100%;
 }
 
@@ -25,17 +32,12 @@ h1 {
   align-items: center;
 }
 
-h2 {
-  text-align: center;
-  font-size: 2em;
-  padding: 20px 4%;
-}
 h3 {
   text-align: center;
   font-size: 25px;
 }
 
-p {
+h2 {
   text-align: center;
   padding: 20px 4%;
   font-size: 30px;
@@ -56,10 +58,6 @@ article {
 }
 /*Footer & Navbar*/
 
-  
-/* footer {
-  border-bottom: 1px solid #000000;  
-} */
 
 .politics {
   text-align: center;
@@ -75,8 +73,7 @@ article {
 .nav-menu {
   background: linear-gradient(to bottom, #333, #626262);  
   position: fixed;
-  bottom: -50rem;
-  flex-direction: column;
+  bottom: -50rem;  
   width: 100%;
   border-radius: 10px;
   text-align: right;
@@ -166,6 +163,186 @@ input[type="submit"] {
 
 #message {
   height: 120px;
+}
+
+/* ---------------------------------page software ------------------------------------ */
+
+
+.separation {
+  border-top: 2px solid black;
+  width: 100%;
+  
+}
+
+.container {
+  padding: 10px 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header {
+  font-size: 2rem;
+}
+
+.intro {
+  text-align: center;  
+}
+
+h2 {
+  margin: 20px;
+}
+
+.slider {
+  width: 500px;
+  overflow: hidden;
+  margin: 100px auto;
+}
+.slides {
+  width: calc(500px * 3);
+  animation: glisse 8s infinite;
+}
+.slide {
+  float: left;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-500px);
+  }
+  40% {
+    transform: translateX(-500px);
+  }
+  66% {
+    transform: translateX(-1000px);
+  }
+  70% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    font-size: 2rem;
+    background-color: rgb(226, 226, 226);
+  }
+  
+  .article {
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    max-width: 90%;
+    background-color: rgb(255, 255, 255);
+  }
+  .article {
+    transition: 0.5s;
+    max-width: 75%; 
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content:space-around;    
+  }
+}
+
+/* ---------------button---------------------- */
+
+.button:after {
+  background: #000000;
+}
+.ctn {
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+.b-pink,
+.b-pink:before {
+  background: rgba(0, 4, 255, 1);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(0, 4, 255, 1) 0%,
+    rgba(124, 0, 155, 1) 100%
+  );
+  background: -webkit-gradient(
+    left bottom,
+    right top,
+    color-stop(0%, rgba(0, 4, 255, 1)),
+    color-stop(100%, rgba(124, 0, 155, 1))
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(0, 4, 255, 1) 0%,
+    rgba(124, 0, 155, 1) 100%
+  );
+  background: -o-linear-gradient(
+    45deg,
+    rgba(0, 4, 255, 1) 0%,
+    rgba(124, 0, 155, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(0, 4, 255, 1) 0%,
+    rgba(124, 0, 155, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(0, 4, 255, 1) 0%,
+    rgba(124, 0, 155, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1 );
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.5s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button:hover {
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.75);
+}
+.button:hover:after {
+  left: 100%;
+  top: 100%;
+  bottom: 100%;
+  right: 100%;
+}
+.button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.5s;
 }
 
 #contact {
