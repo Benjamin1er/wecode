@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
 
 * {
-   font-family: 'Roboto';
+
+  width: 100%;
+  font-family: 'Roboto';
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +12,12 @@
 }
 
 /*En tête du site*/
+.ctn{
+  width:70%;
+}
+.b-pink {
+  text-align: center;
+}
 img {
   border-radius: 10px;
 }
@@ -124,6 +133,7 @@ h2 {
   text-align: center;
   padding: 20px 4%;
   font-size: 30px;
+  font-family: 'Croissant One', cursive;
 }
 .title-bloc {
   padding: 40px 4%;
@@ -138,6 +148,7 @@ article {
 .suite-article {
   text-decoration: none;
   font-size: 20px;
+  padding-left: 20%;
 }
 /*Footer & Navbar*/
 
@@ -229,6 +240,69 @@ li a:hover {
 }
 
 /*Pages Web*/
+
+
+
+
+
+
+
+/*Page jeux-vidéos*/
+.examplecplusplus {
+  display: block;
+  size: 30px;
+}
+
+.examplegame {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.majortitle {
+  font-size: 30px;
+  text-align: center;
+  padding: 40px;
+}
+
+.logolangage {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-bottom: 12%;
+    margin-top: 12%;
+}
+
+@media screen and (min-width: 768px) and (max-width:1200px) {
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 50px;
+  }
+  .container {
+    padding: 0 20%
+  }
+  .blocarticle {
+    display: flex;
+    flex-flow: row;
+  }
+  .logolangage {
+    width: 40%;
+    height: 40%;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .articlegame {
+    padding: 0 8%;
+  }
+}
+
+
+
 
 
 /*Contact*/
