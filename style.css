@@ -28,7 +28,7 @@ p#description {
   height: 500px;
   color: white;
   position: relative;
-  z-index: 5;
+  /* z-index: 5; */
   background-image: url("assets/header.jpeg");
   background-size: cover;
 }
@@ -170,7 +170,7 @@ article {
 
   height: 0.8em;
   width: 100%; 
-  position: fixed;  
+  position: absolute;  
   margin-left: auto ;
   cursor: pointer;
 }
