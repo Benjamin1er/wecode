@@ -456,3 +456,64 @@ h2 {
 #contactForm {
   width: 400px;
 }
+
+/* Page AI */
+
+#aiHeader {
+  color: aliceblue;
+  width: 100%;
+  height: 500px;
+  background-image: url("assets/aih.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+  #aiHeader {
+    color: aliceblue;
+    height: 500px;
+    background-image: url("assets/aih.jpg");
+    background-size: cover;
+    width: 800px;
+  }
+}
+
+.aiH3 {
+  font-size: 50px;
+  text-align: center;
+  padding: 15px;
+}
+
+#aiP {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.aiH4 {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+span {
+  font-weight: bold;
+}
+
+a {
+  font-size: 25px;
+}
+
+#aiPic {
+  width: 100%;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  #aiPic {
+    width: 800px;
+  }
+}
+
+#aiH3Vid {
+  padding: 20px;
+}
