@@ -2,43 +2,44 @@
 /*Général*/
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
-  * {
-    width: 100%;
 
+  * {       
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1.5rem;
+    
   }
 
 
 /*En tête du site*/
+
+#target {  
+  position: absolute;
+  display: flex;
+  margin: auto;
+  top: auto;
+}
+
 
   /*Navbar*/
   .b-pink {
     text-align: center;
   }
 
-  img {
-    border-radius: 10px;
-  }
+ 
 
   #description {
-    padding: 50% 20% 10% 20%;
+    padding: 0% 10% 0% 5%;
     font-size: 3vh;
     text-shadow: 2px 2px black, 2px 2px black, 2px 2px black, 2px 2px black;
     text-transform: uppercase;
     text-align: center;
   }
-
-  .top-navbar{
-
-    height: 0.8em;
-    width: 70%; 
-    position: fixed;  
-    cursor: pointer;
-  }
+  .navbar {
+    display: flex;
+  }  
+  
   .nav-menu {
     opacity: 75%; 
     height: auto;
@@ -50,8 +51,7 @@
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
-  .top-navbar{
-    text-align: left;
+  .top-navbar{    
     opacity: 75%;
     height: 50px;
     width: 100%;  
@@ -72,7 +72,6 @@
     cursor: pointer;  
   }
 
-
   .logo-navbar {
     opacity: 100%;  
   }
@@ -87,19 +86,38 @@
     transition: all 0.3s ease-in-out;
     background-color: rgb(255, 255, 255);
   }
+  
+  .logo-contact {
+    background-image: url("./assets/lettre.png");
+  }
+  .nav-menu.active {
+    bottom: 50px;
+  }
+
+  .nav-item {  
+    margin: 0.5em 0;
+  }
 
   /*Image d'accueil*/
     .header {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      height: 50vh;
+      justify-content: center;
+      height: 35vh;
       color: white;
-      position: relative;
-      /* z-index: 5; */
       background-image: url("assets/header.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
+      font-size: 8vw;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      
+    }
+    
+    #grosTitre {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
   /*Articles*/
@@ -131,81 +149,76 @@
   }
 
 
-.logo-contact {
-  background-image: url("./assets/lettre.png");
-}
-.nav-menu.active {
-  bottom: 50px;
-}
 
-.nav-item {  
-  margin: 1rem 0;
-}
-/*Articles*/
+/*Articles Accueil*/
 
-article.index {
-  background-size: cover;
-  width: 70%;
-  height: 50%;
-  text-align: center;
-  padding: 20px 4%;
-  margin: 3%;
-  font-size: 0.6em;
-  font-family: 'Croissant One', cursive;
-  border: 4px solid rgba(124, 0, 155, 1);
-  border-radius: 20px;
-}
+  article.index {
+    background-size: 100% 100%;
+    width: 70%;
+    height: 25vh;
+    text-align: center;
+    padding: auto;
+    margin: 5%;
+    display: flex;
+    font-family: 'Croissant One', cursive;
+    border: 4px solid rgba(124, 0, 155, 1);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px 4px rgba(124, 0, 155, 0.5);
+  }
 
-a.article {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #ffffff;
-}
+  a.article {
+    font-size: 8vw;
+    text-decoration: none;
+    color: #ffffff;
+  }
 
-#dev-web {
-  background-image: url("./assets/coding.jpg");
-}
+  #dev-web {
+    background-image: url("./assets/dessin web.jpg");
+  }
 
-#video-games {
-  background-image: url("./assets/gamecontroler.jpg");
-}
+  #video-games {
+    background-image: url("./assets/gamecontroler.jpg");
+  }
 
-#software {
-  background-image: url("./assets/coding.jpg");
-}
+  #software {
+    background-image: url("./assets/coding.jpg");
+  }
 
-#robotic {
-  background-image: url("./assets/robot.jpeg");
-}
+  #robotic {
+    background-image: url("./assets/robot.jpeg");
+  }
 
-#ai {
-  background-image: url("./assets/coding.jpg");
-}
+  #ai {
+    background-image: url("./assets/ai.jpg");
+  }
 
-#blockchain {
-  background-image: url("./assets/coding.jpg");
-}
+  #blockchain {
+    background-image: url("./assets/blockchaintheme.jpg");
+  }
 
-.container {
+  .indexContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    margin: 5% 0 10% 0;
+  }
 
 
-h3 {
-  text-align: center;
-  font-size: 25px; 
-  padding: 40px 4%;
-  color: #ffffff;
-}
+  h3 {
+    text-align: center;
+    font-size: 25px; 
+    padding: 40px 4%;
+    color: #ffffff;
+  }
 
-h2 {
-  text-align: center;
-  padding: 20px 4%;
-  font-size: 30px;
-  font-family: 'Croissant One', cursive;
-}
+  h2 {
+    text-align: center;
+    padding: 20px 4%;
+    font-size: 30px;
+    font-family: 'Croissant One', cursive;
+  }
 
 .parallax {
   width: 100%;
@@ -262,12 +275,9 @@ article {
     font-size: 40px;
     text-decoration: underline;
 }
- /* .navbar {
-   height: 200px;
- } */
 
 .nav-menu {
-  opacity: 75%; 
+  opacity: 90%; 
   height: auto;
   position: fixed;
   bottom: -50rem;  
@@ -280,7 +290,7 @@ article {
 
 .top-navbar{
   text-align: left;
-  opacity: 75%;
+  opacity: 90%;
   height: 50px;
   width: 100%;  
   position: fixed;
@@ -291,13 +301,13 @@ article {
 .hamburger {
   display: flex;
   justify-content: space-around;
-  opacity: 75%;
+  opacity: 90%;
   height: 50px;
   width: 100%;  
   position: fixed;
   bottom: 0;
   margin-left: auto ;
-  cursor: pointer;  
+  /* cursor: pointer;   */
 }
 
 
@@ -327,7 +337,7 @@ li a {
 }
 
 li a:hover {
-    color: rgb(0, 4, 255);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -502,16 +512,13 @@ input[type="submit"] {
 
 
 /* ---------------------------------page software ------------------------------------ */
+.virusTitle {
+ 
 
-.header-software {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 50vh;
-  color: white;
-  position: relative;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;  
+
+}
+.softH4 {
+  padding: 10px;
 }
 
 .header-software {
@@ -586,15 +593,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 1500px) {
-    .nav-menu {
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
 @media  screen and (min-width: 1500px) {
-
   
   .nav-menu {
     display: flex;
@@ -611,9 +610,21 @@ h2 {
   }
 }
   
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 800px) {
+  .indexContainer {
+    flex-direction: row;
+  }
+
+  article.index {
+    
+
+  }
   
+  a.article {
+    font-size: 5vw;
+  }
+
   .container {
     font-size: 2rem;
   }
