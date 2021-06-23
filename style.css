@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
 
-* {
-
-  
+* {  
   font-family: 'Roboto';
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,14 +20,18 @@ img {
  
 
 
-p#description {
-  /* align-content: flex-end; */
+#description {  
+  padding: 50% 20% 10% 20%;
+  font-size: 3vh;   
+}
+
+.header-title {
   padding: 50% 20% 10% 20%;
   font-size: 3vh;   
 }
 
 .header {
-  display: flex;
+ display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 500px;
@@ -38,7 +39,7 @@ p#description {
   position: relative;
   /* z-index: 5; */
   background-image: url("assets/header.jpeg");
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 .top-navbar{
@@ -163,49 +164,51 @@ article {
   font-size: 40px;
   text-decoration: underline;
 }
-
+ /* .navbar {
+   height: 200px;
+ } */
 
 .nav-menu {
-  opacity: 75%;
-  background: linear-gradient(to bottom, #333, #626262);  
+  opacity: 50%; 
+  height: auto;
   position: fixed;
   bottom: -50rem;  
   width: 100%;
-  border-radius: 10px;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.5s;
   box-shadow:
     0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
 .top-navbar{
-  height: 0.8em;
-  width: 100%; 
-  position: fixed;  
-  margin-left: auto;
-  cursor: pointer;
+  text-align: left;
+  opacity: 50%;
+  height: 50px;
+  width: 100%;  
+  position: fixed;
+  top: 0; 
+  display: block;  
 }
 
 .hamburger {
-  opacity: 75%;
+  opacity: 50%;
   height: 50px;
-  width: 100%;
-  background: linear-gradient(to bottom, #333, #626262);
+  width: 100%;  
   position: fixed;
   bottom: 0;
   margin-left: auto ;
   display: block;
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+  transform: translateY(13.5px) rotate(45deg);
 }
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-13.5px) rotate(-45deg);
 }
 .bar {
   display: block;
@@ -216,13 +219,14 @@ article {
   transition: all 0.3s ease-in-out;
   background-color: rgb(255, 255, 255);
 }
-
+.logo-contact {
+  background-image: url("./assets/lettre.png");
+}
 .nav-menu.active {
-  bottom: 1rem;
+  bottom: 50px;
 }
 
-.nav-item {
-  
+.nav-item {  
   margin: 1rem 0;
 }
 
@@ -271,10 +275,6 @@ li a:hover {
     margin-left: 25%;
     margin-bottom: 12%;
     margin-top: 12%;
-}
-
-@media screen and (min-width: 768px) and (max-width:1200px) {
-
 }
 
 
@@ -425,8 +425,18 @@ h2 {
     transition: 0.5s;
     max-width: 75%; 
   }
+  .hamburger {
+    top: 0;
+    bottom: none;
+  }
+  .nav-menu.active {
+    top: 50px;
+    bottom: auto;    
+  }
+.top-navbar {
+  visibility: hidden;
+}
 
-  
 }
 
 /* ---------------button---------------------- */
