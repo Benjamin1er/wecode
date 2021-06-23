@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
 * {
-    font-family: 'Roboto';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 1.5rem;
+
+  width: 100%;
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
 }
 
 
@@ -53,8 +55,8 @@ p#description {
 }
 
 .header-picture {
-    width: 100%;
-    height: 500px;
+  width: 95%;
+  height: 380px;
 }
 
 a {
@@ -119,6 +121,7 @@ h1 {
     align-items: center;
 }
 
+
 h3 {
     text-align: center;
     font-size: 25px;
@@ -131,17 +134,32 @@ h2 {
     font-family: 'Croissant One', cursive;
 }
 
-.title-bloc {
-    padding: 40px 4%;
+.parallax {
+  width: 100%;
+  height: 150px;
+  background: url(assets/imgparallax.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+h3 {
+  text-align: center;
+  font-size: 35px;
+  padding: 40px 4%;
+  color: #ffffff;
 
 article {
     padding: 5%;
 }
 
 .text-article {
-    font-size: 16px;
-    text-align: left;
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Courgette', cursive;
+
 }
 
 .suite-article {
@@ -149,6 +167,14 @@ article {
     font-size: 20px;
     padding-left: 20%;
 }
+
+#suite-articlecolorC {
+  color: #3ec6d8;
+}
+#suite-articlecolorPython {
+  color: #3ec6d8;
+}
+/*Footer & Navbar*/
 
 
 /*Footer & Navbar*/
@@ -232,6 +258,11 @@ li a:hover {
 
 
 /*Pages Web*/
+/* ---------------------------------page video games ------------------------------------ */
+.headergame{
+  text-align: center;
+}
+
 
 #webHeader {
     color: aliceblue;
@@ -266,6 +297,7 @@ li a:hover {
 
 /*Page jeux-vidéos*/
 
+
 .examplecplusplus {
     display: block;
     size: 30px;
@@ -278,9 +310,10 @@ li a:hover {
 }
 
 .majortitle {
-    font-size: 30px;
-    text-align: center;
-    padding: 40px;
+  font-size: 20px;
+  text-align: center;
+  padding: 40px;
+
 }
 
 .logolangage {
@@ -290,32 +323,73 @@ li a:hover {
     margin-bottom: 12%;
     margin-top: 12%;
 }
+@media screen and (min-width: 768px) and (max-width:1200px) {
 
-@media screen and (min-width: 768px) and (max-width:1200px) {}
-
-@media screen and (min-width: 1200px) {
-    h2 {
-        font-size: 50px;
-    }
-    .container {
-        padding: 0 20%
-    }
-    .blocarticle {
-        display: flex;
-        flex-flow: row;
-    }
-    .logolangage {
-        width: 40%;
-        height: 40%;
-        margin-left: 0;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    .articlegame {
-        padding: 0 8%;
-    }
+  .header-picture {
+    width: 75%;
+    height: 500px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .majortitle {
+    font-size: 30px;
+  }
+  .text-article {
+    font-size: 22px;
+  }
 }
 
+
+@media screen and (min-width: 1200px) {
+  .header-picture {
+    width: 60%;
+    height: 600px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  .parallax {
+    height: 300px;
+  }
+  .container {
+    padding: 0 20%
+  }
+  .blocarticle {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  .article {
+    padding: 2%;
+  }
+  #backgroundjava {
+    background-color: #3ec6d8;
+  }
+  #backgroundcsharp {
+    background-color: #3ec6d8;
+  }
+  .logolangage {
+    width: 40%;
+    height: 40%;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .articlegame {
+    padding: 0 3%;
+  }
+  .majortitle {
+    padding: 8% 4%;
+    font-size: 35px;
+  }
+  .text-article {
+    font-size: 26px;
+  }
+  }
 
 /*Contact*/
 
@@ -360,8 +434,7 @@ input[type="submit"] {
 }
 
 .container {
-    padding: 10px 10px;
-    background-color: rgb(255, 255, 255);
+  padding: 10px 10px;
 }
 
 .header {
@@ -423,20 +496,21 @@ h2 {
 }
 
 @media screen and (min-width: 800px) {
-    .container {
-        font-size: 2rem;
-        background-color: rgb(226, 226, 226);
-    }
-    .article {
-        padding: 20px;
-        margin: 10px 10px 10px 10px;
-        max-width: 90%;
-        background-color: rgb(255, 255, 255);
-    }
-    .article {
-        transition: 0.5s;
-        max-width: 75%;
-    }
+  .container {
+    font-size: 2rem;
+  }
+  
+  .article {
+    padding: 20px;
+    margin: 10px 10px 10px 10px;
+    max-width: 90%;
+    background-color: rgb(255, 255, 255);
+  }
+  .article {
+    transition: 0.5s;
+    max-width: 75%; 
+  }
+
 }
 
 

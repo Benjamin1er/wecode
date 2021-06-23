@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Croissant+One&display=swap" rel="stylesheet">
     <title>Jeux Vidéos</title>
   </head>
   <body>  
-    <header>
+    <header class="headergame">
       <div class="ctn">    
         <a class="button b-pink" href="./index.html">WECODE</a>
       </div>
@@ -17,26 +17,18 @@
       <img class="header-picture" src="assets/gamecontroler.jpg" alt="Header picture game" />
     </header>
     <p class="majortitle">
-      Dans cette rubrique, vous découvrirez les outils utilisés pour développer les jeux vidéos  
+      Dans cette rubrique, vous découvrirez les langages utilisés pour développer des jeux vidéos  
     </p>
     <section class="container">
-      <h3 class="title-bloc">Les languages</h3>
+      <div class="parallax">
+        <h3>Les languages</h3>
+      </div>
       <article class="blocarticle">
         <img class="logolangage" src="assets/c++.png" alt="C++ logo" /> 
         <div class="articlegame">
-          <p class="text-article"> Le C++ est de loin le langage de programmation le plus utilisé dans le jeu vidéo, mais aussi d’une grande partie de l’informatique en général. C’est le langage utilisé par la plupart des plus grands moteur de jeu (Unity, Unreal Engine, Godot, GameMaker…)
-
-            Le C++ est un langage de bas niveau : il est donc assez difficile à appréhender au départ. Il est nécessaire de s’entraîner afin de comprendre la manière dont ce langage à la logique rigide fonctionne.
-            
-            Il en vaut toutefois la peine : le C++ est conçu pour être extrêmement malléable une fois qu’on en a assimilé les subtilités.
-
-            Il est particulièrement populaire dans le jeu vidéo car il permet d’exercer un contrôle plus direct sur les processus liés à la mémoire et ressources graphiques. Une caractéristique plutôt importante pour des projets aussi gourmands.
-            Le fait qu’il soit utilisé par tant de développeurs en fait également un langage très documenté. Vous trouverez de très nombreuses ressources, aides et informations directement en ligne avec une simple recherche.
-            Il s’agit d’un dérivé de la grande famille de langages des « C », ce qui le rend assez proche de nombreux autres langages de programmation. Le C++ est lui-même à la base d’autres variations, tels que le C# (dit « si sharp »), de plus en plus populaire dans le jeu vidéo pour son meilleur confort d’utilisation.
-            <br>
-            Jeux créés avec C++ : La quasi-totalité des jeux vidéo modernes
+          <p class="text-article"> Le C++ est le langage de programmation le plus utilisé dans le jeu vidéo, mais aussi d’une grande partie de l’informatique en général. C’est le langage utilisé par la plupart des plus grands moteur de jeu (Unity, Unreal Engine, Godot, GameMaker…). De bas niveau, il est donc assez difficile à appréhender au départ. Il est nécessaire de s’entraîner afin de comprendre la manière dont ce langage à la logique rigide fonctionne. Il est conçu pour être extrêmement malléable une fois qu’on en a assimilé les subtilités. Il est particulièrement populaire dans le jeu vidéo car il permet d’exercer un contrôle plus direct sur les processus liés à la mémoire et ressources graphiques. Le fait qu’il soit utilisé par tant de développeurs en fait également un langage très documenté. Jeux créés avec C++ : La quasi-totalité des jeux vidéo modernes
           </p> 
-          <a class="suite-article" href="#">Suite de l'article ici...</a>
+          <a class="suite-article" id="suite-articlecolorC" href="https://www.campus-des-ecoles.fr/gaming/actus/apprendre-coder-jeu-video-c/">Suite de l'article ici...</a>
         </div>
         <div class="examplecplusplus">
           <img src="assets/screenwow.png" alt="wow picture" />
@@ -45,17 +37,11 @@
           <p class="examplegame">Skyrim développé par Bethesda.</p>      
         </div>     
       </article>
-
-      <article class="blocarticle">
+      <article class="blocarticle" id="backgroundjava">
         <img class="logolangage" src="assets/java.png" alt="java logo" />
         <div class="articlegame">
           <p class="text-article">
-            Langage très proche du C++, il s’agit généralement de la seconde corde à l’arc des programmeurs. Java propose une caractéristique assez unique : son code n’a pas besoin d’être recompilé. En d’autres termes, une application Java fonctionnera exactement de la même manière sur toutes les machines et systèmes (pour peu qu’ils supportent Java).
-            
-            Cela lui permet de franchir la plupart des barrières et d’exporter facilement un jeu ou un programme sur de nombreuses plateformes : PC, Mac, Linux, Android, IOS…
-            <br/>
-            <br>
-            Jeux créés sous Java : Minecraft, Runescape, Angry Birds, Mugen, Wakfu
+            Langage très proche du C++, il s’agit généralement de la seconde corde à l’arc des programmeurs. Java propose une caractéristique assez unique : son code n’a pas besoin d’être recompilé. En d’autres termes, une application Java fonctionnera exactement de la même manière sur toutes les machines et systèmes (pour peu qu’ils supportent Java). Cela lui permet de franchir la plupart des barrières et d’exporter facilement un jeu ou un programme sur de nombreuses plateformes : PC, Mac, Linux, Android, IOS… Jeux créés sous Java : Minecraft, Runescape, Angry Birds, Mugen, Wakfu
           </p>
           <a class="suite-article" href="#">Suite de l'article ici...</a>
         </div>
@@ -64,7 +50,6 @@
         <p class="examplegame">Minecraft développé par Mojang.</p>
         </div>
         </article>
-
       <article class="blocarticle">
         <img class="logolangage" src="assets/python.png" alt="python logo" />
         <div class="articlegame">
@@ -74,15 +59,14 @@
             <br>
             Jeux réalisés sous Python : Eve Online, Doki Doki Literature Club, Civilization IV, Pong, Space Invader
           </p>
-          <a class="suite-article" href="#">Suite de l'article ici...</a>
+          <a class="suite-article" id="suite-articlecolorPython" href="#">Suite de l'article ici...</a>
         </div>
         <div class="examplecplusplus">
         <img src="assets/Mario.png" alt="mariobros picture" />
         <p class="examplegame">Super Mario Python développé par HJ avec PyGame reprenant le jeux culte Super Mario Bros développé par Nintendo.</p>
         </div>
       </article>
-
-      <article class="blocarticle">
+      <article class="blocarticle" id="backgroundcsharp">
         <img class="logolangage" src="assets/csharp.png" alt="csharp logo" />
         <div class="articlegame">
           <p class="text-article">C# (prononcé « C Sharp ») est un langage de programmation moderne, orienté objet et de type sécurisé. Il permet aux développeurs de créer de nombreux types d’applications sécurisées et fiables qui s’exécutent dans l’écosystème .NET (prononcé « dotnet »). Ce langage prend sa source dans la famille de langages C et sera immédiatement reconnaissable aux programmeurs en C, C++, Java et JavaScript. Cette visite guidée fournit une vue d’ensemble des principaux composants du langage dans C# 8 et versions antérieures. Si vous souhaitez explorer le langage par le biais d’exemples interactifs, consultez la présentation des didacticiels C# .<p>
@@ -92,10 +76,6 @@
         <img src="assets/Hearthstone.png" alt="hearthstone picture" />
         <p class="examplegame">Hearthstone développé par Blizzard.</p>
         </div>
-      </article>
-       
-      
-       </section>
       </article>
     </section>
     <nav class="navbar">
