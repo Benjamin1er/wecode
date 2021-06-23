@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
+
 * {
   width: 100%;
+
   font-family: 'Roboto';
   margin: 0;
   padding: 0;
@@ -56,6 +58,7 @@ img {
     background-size: cover;
 }
 
+
 .header-picture {
   width: 95%;
   height: 380px;
@@ -66,6 +69,7 @@ a {
     color: #ffffff;
 }
 
+
 h1 {
     text-align: center;
     font-size: 1em;
@@ -74,6 +78,7 @@ h1 {
 
 
 /*Articles*/
+
 
 article.index {
   background-size: cover;
@@ -195,6 +200,10 @@ article {
    height: 200px;
  } */
 
+ /* .navbar {
+   height: 200px;
+ } */
+
 .nav-menu {
   opacity: 75%; 
   height: auto;
@@ -238,6 +247,7 @@ article {
 }
 
 .hamburger.active .bar:nth-child(3) {
+
   transform: translateY(-13.5px) rotate(-45deg);
 }
 
@@ -259,6 +269,7 @@ article {
   background-image: url("./assets/lettre.png");
 }
 .nav-menu.active {
+
   bottom: 50px;
 }
 
@@ -346,6 +357,7 @@ li a:hover {
     margin-bottom: 12%;
     margin-top: 12%;
 }
+
 @media screen and (min-width: 768px) and (max-width:1200px) {
 
   .header-picture {
@@ -362,6 +374,7 @@ li a:hover {
     font-size: 22px;
   }
 }
+
 
 
 @media screen and (min-width: 1200px) {
@@ -449,6 +462,20 @@ input[type="submit"] {
 }
 
 
+
+/* ---------------------------------page software ------------------------------------ */
+
+.header-software {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+  color: white;
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+}
+
 .header-software {
   display: flex;
   flex-direction: column;
@@ -472,6 +499,7 @@ input[type="submit"] {
 .header {
     font-size: 2rem;
 }
+
 
 .intro {
     text-align: center;
@@ -544,7 +572,7 @@ h2 {
     margin: 0;
   }
 }
-  
+
 
 @media screen and (min-width: 800px) {
   
@@ -570,6 +598,20 @@ h2 {
 .top-navbar {
   visibility: hidden;
 }
+
+  
+  .hamburger {
+    top: 0;
+    bottom: none;
+  }
+  .nav-menu.active {
+    top: 50px;
+    bottom: auto;    
+  }
+.top-navbar {
+  visibility: hidden;
+}
+
 
 }
 
