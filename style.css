@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
 
-* {
-
-  
+* {  
   font-family: 'Roboto';
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,23 +20,25 @@ img {
  
 
 
-p#description {
-  /* align-content: flex-end; */
+#description {  
   padding: 50% 20% 10% 20%;
-  font-size: 3vh;   
+  font-size: 3vh;
+  text-shadow: 3px 3px 4px black;
 }
 
 .header {
-  display: flex;
+ display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 500px;
+  height: 50vh;
   color: white;
   position: relative;
-  z-index: 5;
+  /* z-index: 5; */
   background-image: url("assets/header.jpeg");
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
+
 
 .top-navbar{
 
@@ -58,15 +57,9 @@ p#description {
   background-size: cover;
 }
 
-.header-picture {
-  width: 100%;
-  height: 500px;
-}
 
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
+
+
 
 h1 {
   text-align: center;
@@ -76,47 +69,47 @@ h1 {
 
 /*Articles*/
 
-.dev-web-index {
+article.index {
   background-size: cover;
-  background-image: url("./assets/coding.jpg");
-  width: 500px;
-  height: 300px;
-
+  width: 70%;
+  height: 50%;
+  text-align: center;
+  padding: 20px 4%;
+  margin: 3%;
+  font-size: 0.6em;
+  font-family: 'Croissant One', cursive;
+  border: 4px solid rgba(124, 0, 155, 1);
+  border-radius: 20px;
 }
 
-.video-games-index {
-  background-size: cover;
+a.article {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#dev-web {
+  background-image: url("./assets/coding.jpg");
+}
+
+#video-games {
   background-image: url("./assets/gamecontroler.jpg");
-  width: 500px;
-  height: 300px;
 }
 
-.software-index {
-  background-size: cover;
+#software {
   background-image: url("./assets/coding.jpg");
-  width: 500px;
-  height: 300px;
 }
 
-.robotique-index {
-  background-size: cover;
+#robotic {
   background-image: url("./assets/robot.jpeg");
-  width: 500px;
-  height: 300px;
 }
 
-.ai-index {
-  background-size: cover;
+#ai {
   background-image: url("./assets/coding.jpg");
-  width: 500px;
-  height: 300px;
 }
 
-.blockchain-index {
-  background-size: cover;
+#blockchain {
   background-image: url("./assets/coding.jpg");
-  width: 500px;
-  height: 300px;
 }
 
 .container {
@@ -163,46 +156,61 @@ article {
   font-size: 40px;
   text-decoration: underline;
 }
-
+ /* .navbar {
+   height: 200px;
+ } */
 
 .nav-menu {
-  opacity: 75%;
-  background: linear-gradient(to bottom, #333, #626262);  
+  opacity: 75%; 
+  height: auto;
   position: fixed;
   bottom: -50rem;  
   width: 100%;
-  border-radius: 10px;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.5s;
   box-shadow:
     0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
-
-
-.hamburger {
+.top-navbar{
+  text-align: left;
   opacity: 75%;
   height: 50px;
-  width: 100%;
-  background: linear-gradient(to bottom, #333, #626262);
+  width: 100%;  
+  position: fixed;
+  top: 0; 
+  display: block;  
+}
+
+.hamburger {
+  display: flex;
+  justify-content: space-around;
+  opacity: 75%;
+  height: 50px;
+  width: 100%;  
   position: fixed;
   bottom: 0;
   margin-left: auto ;
-  display: block;
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+  transform: translateY(13.5px) rotate(45deg);
 }
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-13.5px) rotate(-45deg);
 }
+
+.logo-navbar {
+  opacity: 100%;  
+}
+
 .bar {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 50px;
   height: 9px;
   margin: 5px auto;
@@ -210,13 +218,14 @@ article {
   transition: all 0.3s ease-in-out;
   background-color: rgb(255, 255, 255);
 }
-
+.logo-contact {
+  background-image: url("./assets/lettre.png");
+}
 .nav-menu.active {
-  bottom: 1rem;
+  bottom: 50px;
 }
 
-.nav-item {
-  
+.nav-item {  
   margin: 1rem 0;
 }
 
@@ -265,10 +274,6 @@ li a:hover {
     margin-left: 25%;
     margin-bottom: 12%;
     margin-top: 12%;
-}
-
-@media screen and (min-width: 768px) and (max-width:1200px) {
-
 }
 
 
@@ -335,6 +340,16 @@ input[type="submit"] {
 
 /* ---------------------------------page software ------------------------------------ */
 
+.header-software {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+  color: white;
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+}
 
 .separation {
   border-top: 2px solid black;
@@ -345,10 +360,6 @@ input[type="submit"] {
 .container {
   padding: 10px 10px;
   background-color: rgb(255, 255, 255);
-}
-
-.header {
-  font-size: 2rem;
 }
 
 .intro {
@@ -395,32 +406,51 @@ h2 {
     transform: translateX(0);
   }
 }
+
 @media  screen and (min-width: 1500px) {
+
+  
   .nav-menu {
     display: flex;
-    justify-content:space-around;    
+    justify-content:space-around;  
+    top: 0;  
+    bottom: auto;
+    height: 50px;
+  }
+  .hamburger {
+    visibility: hidden;
+  }
+  .nav-item {  
+    margin: 0;
   }
 }
   
 
 @media screen and (min-width: 800px) {
+  
   .container {
     font-size: 2rem;
-    background-color: rgb(226, 226, 226);
   }
-  
   .article {
     padding: 20px;
     margin: 10px 10px 10px 10px;
     max-width: 90%;
-    background-color: rgb(255, 255, 255);
-  }
-  .article {
     transition: 0.5s;
     max-width: 75%; 
   }
-
   
+  .hamburger {
+    top: 0;
+    bottom: none;
+  }
+  .nav-menu.active {
+    top: 50px;
+    bottom: auto;    
+  }
+.top-navbar {
+  visibility: hidden;
+}
+
 }
 
 /* ---------------button---------------------- */
@@ -533,6 +563,11 @@ h2 {
 
 
 @media only screen and (min-width: 600px) {
+ 
+  .header {
+    height: 60vh;
+  }
+  
   #aiHeader {
     color: aliceblue;
     height: 500px;
