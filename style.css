@@ -2,9 +2,8 @@
 
 * {
 
-  
+  width: 100%;
   font-family: 'Roboto';
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,8 +19,6 @@
 img {
   border-radius: 10px;
 }
- 
-
 
 p#description {
   /* align-content: flex-end; */
@@ -59,8 +56,8 @@ p#description {
 }
 
 .header-picture {
-  width: 100%;
-  height: 500px;
+  width: 95%;
+  height: 380px;
 }
 
 a {
@@ -125,31 +122,48 @@ h1 {
   align-items: center;
 }
 
-h3 {
-  text-align: center;
-  font-size: 25px;
-}
-
 h2 {
   text-align: center;
   padding: 20px 4%;
   font-size: 30px;
   font-family: 'Croissant One', cursive;
 }
-.title-bloc {
+.parallax {
+  width: 100%;
+  height: 150px;
+  background: url(assets/imgparallax.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h3 {
+  text-align: center;
+  font-size: 35px;
   padding: 40px 4%;
+  color: #ffffff;
 }
 article {
   padding: 5%;
 }
 .text-article {
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
+  font-family: 'Courgette', cursive;
 }
 .suite-article {
   text-decoration: none;
   font-size: 20px;
   padding-left: 20%;
+}
+
+#suite-articlecolorC {
+  color: #3ec6d8;
+}
+#suite-articlecolorPython {
+  color: #3ec6d8;
 }
 /*Footer & Navbar*/
 
@@ -234,14 +248,10 @@ li a:hover {
 }
 
 /*Pages Web*/
-
-
-
-
-
-
-
-/*Page jeux-vidéos*/
+/* ---------------------------------page video games ------------------------------------ */
+.headergame{
+  text-align: center;
+}
 .examplecplusplus {
   display: block;
   size: 30px;
@@ -254,7 +264,7 @@ li a:hover {
 }
 
 .majortitle {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   padding: 40px;
 }
@@ -266,15 +276,37 @@ li a:hover {
     margin-bottom: 12%;
     margin-top: 12%;
 }
-
 @media screen and (min-width: 768px) and (max-width:1200px) {
 
+  .header-picture {
+    width: 75%;
+    height: 500px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .majortitle {
+    font-size: 30px;
+  }
+  .text-article {
+    font-size: 22px;
+  }
 }
 
 
 @media screen and (min-width: 1200px) {
+  .header-picture {
+    width: 60%;
+    height: 600px;
+  }
   h2 {
     font-size: 50px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  .parallax {
+    height: 300px;
   }
   .container {
     padding: 0 20%
@@ -282,6 +314,16 @@ li a:hover {
   .blocarticle {
     display: flex;
     flex-flow: row;
+    align-items: center;
+  }
+  .article {
+    padding: 2%;
+  }
+  #backgroundjava {
+    background-color: #3ec6d8;
+  }
+  #backgroundcsharp {
+    background-color: #3ec6d8;
   }
   .logolangage {
     width: 40%;
@@ -291,7 +333,14 @@ li a:hover {
     margin-top: 0;
   }
   .articlegame {
-    padding: 0 8%;
+    padding: 0 3%;
+  }
+  .majortitle {
+    padding: 8% 4%;
+    font-size: 35px;
+  }
+  .text-article {
+    font-size: 26px;
   }
 }
 
@@ -344,7 +393,6 @@ input[type="submit"] {
 
 .container {
   padding: 10px 10px;
-  background-color: rgb(255, 255, 255);
 }
 
 .header {
@@ -406,7 +454,6 @@ h2 {
 @media screen and (min-width: 800px) {
   .container {
     font-size: 2rem;
-    background-color: rgb(226, 226, 226);
   }
   
   .article {
