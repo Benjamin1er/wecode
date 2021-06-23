@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
 
 * {
-   font-family: 'Roboto';
+
+  
+  font-family: 'Roboto';
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +12,11 @@
 }
 
 /*En tête du site*/
+
+.b-pink {
+  text-align: center;
+}
+
 img {
   border-radius: 10px;
 }
@@ -33,6 +41,14 @@ p#description {
   background-size: cover;
 }
 
+.top-navbar{
+
+  height: 0.8em;
+  width: 70%; 
+  position: fixed;  
+  cursor: pointer;
+}
+
 .software-header {
   height: 400px;
   color: white;
@@ -50,12 +66,6 @@ p#description {
 a {
   text-decoration: none;
   color: #ffffff;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 h1 {
@@ -124,6 +134,7 @@ h2 {
   text-align: center;
   padding: 20px 4%;
   font-size: 30px;
+  font-family: 'Croissant One', cursive;
 }
 .title-bloc {
   padding: 40px 4%;
@@ -138,6 +149,7 @@ article {
 .suite-article {
   text-decoration: none;
   font-size: 20px;
+  padding-left: 20%;
 }
 /*Footer & Navbar*/
 
@@ -166,6 +178,7 @@ article {
     0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
+<<<<<<< HEAD
 .top-navbar{
   height: 0.8em;
   width: 100%; 
@@ -173,6 +186,9 @@ article {
   margin-left: auto;
   cursor: pointer;
 }
+=======
+
+>>>>>>> e77a658237aa8e73a955f9313be3659a3ad56500
 
 .hamburger {
   opacity: 75%;
@@ -228,6 +244,69 @@ li a:hover {
 }
 
 /*Pages Web*/
+
+
+
+
+
+
+
+/*Page jeux-vidéos*/
+.examplecplusplus {
+  display: block;
+  size: 30px;
+}
+
+.examplegame {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.majortitle {
+  font-size: 30px;
+  text-align: center;
+  padding: 40px;
+}
+
+.logolangage {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-bottom: 12%;
+    margin-top: 12%;
+}
+
+@media screen and (min-width: 768px) and (max-width:1200px) {
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 50px;
+  }
+  .container {
+    padding: 0 20%
+  }
+  .blocarticle {
+    display: flex;
+    flex-flow: row;
+  }
+  .logolangage {
+    width: 40%;
+    height: 40%;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .articlegame {
+    padding: 0 8%;
+  }
+}
+
+
+
 
 
 /*Contact*/
@@ -359,11 +438,7 @@ h2 {
 .button:after {
   background: #080811;
 }
-.ctn {
-  display: block;
-  margin: auto;
-  text-align: center;
-}
+
 .b-pink,
 .b-pink:before {
   background: rgba(0, 4, 255, 1);
@@ -402,12 +477,11 @@ h2 {
 }
 
 .button {
-  display: inline-block;
+  display: block;
   position: relative;
   border-radius: 3px;
   text-decoration: none;
   padding: 0.5em;
-  margin: 0.5em;
   font-size: 0.8em;
   font-weight: bold;
   transition: all 0.5s;
@@ -454,4 +528,65 @@ h2 {
 
 #contactForm {
   width: 400px;
+}
+
+/* Page AI */
+
+#aiHeader {
+  color: aliceblue;
+  width: 100%;
+  height: 500px;
+  background-image: url("assets/aih.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+  #aiHeader {
+    color: aliceblue;
+    height: 500px;
+    background-image: url("assets/aih.jpg");
+    background-size: cover;
+    width: 800px;
+  }
+}
+
+.aiH3 {
+  font-size: 50px;
+  text-align: center;
+  padding: 15px;
+}
+
+#aiP {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.aiH4 {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+span {
+  font-weight: bold;
+}
+
+a {
+  font-size: 25px;
+}
+
+#aiPic {
+  width: 100%;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  #aiPic {
+    width: 800px;
+  }
+}
+
+#aiH3Vid {
+  padding: 20px;
 }
