@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
 
-* {  
+* {
+  width: 100%;
+
   font-family: 'Roboto';
   margin: 0;
   padding: 0;
@@ -18,7 +20,6 @@
 img {
     border-radius: 10px;
 }
-
 
 #description {  
   padding: 50% 20% 10% 20%;
@@ -157,7 +158,7 @@ h3 {
   font-size: 35px;
   padding: 40px 4%;
   color: #ffffff;
-
+}
 article {
     padding: 5%;
 }
@@ -195,6 +196,9 @@ article {
     font-size: 40px;
     text-decoration: underline;
 }
+ /* .navbar {
+   height: 200px;
+ } */
 
  /* .navbar {
    height: 200px;
@@ -472,6 +476,17 @@ input[type="submit"] {
   background-repeat: no-repeat;  
 }
 
+.header-software {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+  color: white;
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+}
+
 .separation {
     border-top: 2px solid black;
     width: 100%;
@@ -571,6 +586,18 @@ h2 {
     transition: 0.5s;
     max-width: 75%; 
   }
+  
+  .hamburger {
+    top: 0;
+    bottom: none;
+  }
+  .nav-menu.active {
+    top: 50px;
+    bottom: auto;    
+  }
+.top-navbar {
+  visibility: hidden;
+}
 
   
   .hamburger {
@@ -669,7 +696,6 @@ h2 {
 /* Page AI */
 
 #aiHeader {
-
   color: aliceblue;
   width: 100%;
   height: 500px;
@@ -742,4 +768,5 @@ a {
 
 #aiH3Vid {
     padding: 20px;
+}
 }
