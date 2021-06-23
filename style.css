@@ -134,14 +134,7 @@
 
 /*Pages Web*/
 
-  .software-header {
-    height: 400px;
-    color: white;
-    position: relative;
-    z-index: 5;
-    background-image: url("./assets/coding.jpg");
-    background-size: cover;
-  }
+ 
 
   .header-picture {
     width: 95%;
@@ -512,10 +505,41 @@ input[type="submit"] {
 
 
 /* ---------------------------------page software ------------------------------------ */
-.virusTitle {
- 
 
+.software-header {
+  height: 400px;
+  color: white;
+  position: relative;
+  z-index: 5;
+  background-image: url("./assets/coding.jpg");
+  background-size: cover;
+}
 
+.soft-title {
+  padding: 20px;
+ color: black;
+}
+
+.soft-container {
+  flex-direction: row;
+  align-items:baseline;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: rgb(192, 192, 192);
+}
+.soft-article {
+  margin: auto;
+padding: 20px;
+  background-color: #fff;
+  /* width: 90%; */
+}
+.soft-intro {
+  margin: auto;
+  width: 75%;
+  padding: 20px;
+}
+.soft-pict {
+  margin: 0 25% 0 25%;
 }
 .softH4 {
   padding: 10px;
@@ -533,8 +557,11 @@ input[type="submit"] {
 }
 
 .separation {
-    border-top: 2px solid black;
+  display: block;
+    height: 2px;
+    background-color: black;
     width: 100%;
+    z-index: 1000;
 }
 
 .container {
@@ -546,9 +573,7 @@ input[type="submit"] {
 }
 
 
-.intro {
-    text-align: center;
-}
+
 
 h2 {
     margin: 20px;
