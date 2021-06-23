@@ -1,43 +1,28 @@
 
 /*Général*/
-
   @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
   * {
-    width: 100%;
-
+    /* width: 100%; */
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
-
-
 /*En tête du site*/
-
   /*Navbar*/
   .b-pink {
     text-align: center;
   }
-
   img {
     border-radius: 10px;
   }
-
   #description {
     padding: 50% 20% 10% 20%;
     font-size: 3vh;
     text-shadow: 2px 2px black, 2px 2px black, 2px 2px black, 2px 2px black;
     text-transform: uppercase;
     text-align: center;
-  }
-
-  .top-navbar{
-
-    height: 0.8em;
-    width: 70%; 
-    position: fixed;  
-    cursor: pointer;
   }
   .nav-menu {
     opacity: 75%; 
@@ -49,17 +34,6 @@
     transition: 0.5s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-
-  .top-navbar{
-    text-align: left;
-    opacity: 75%;
-    height: 50px;
-    width: 100%;  
-    position: fixed;
-    top: 0; 
-    display: block;
-  }
-
   .hamburger {
     display: flex;
     justify-content: space-around;
@@ -71,23 +45,18 @@
     margin-left: auto ;
     cursor: pointer;  
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(13.5px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-13.5px) rotate(-45deg);
   }
-
   .logo-navbar {
     opacity: 100%;  
   }
-
   .bar {
     display: flex;
     justify-content: space-between;
@@ -98,53 +67,42 @@
     transition: all 0.3s ease-in-out;
     background-color: rgb(255, 255, 255);
   }
-
   /*Image d'accueil*/
-    .header {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      height: 50vh;
-      color: white;
-      position: relative;
-      /* z-index: 5; */
-      background-image: url("assets/header.jpg");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-    }
-    
-  /*Articles*/
-    a {
-      text-decoration: none;
-      color: #ffffff;
-      }
-
-    h1 {
-      text-align: center;
-      font-size: 1em;
-      padding: 20px 4%;
-    }
-
-/*Pages Web*/
-
-  .software-header {
-    height: 400px;
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50vh;
     color: white;
     position: relative;
-    z-index: 5;
-    background-image: url("./assets/coding.jpg");
-    background-size: cover;
+    /* z-index: 5; */
+    background-image: url("assets/header.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
-
-  .header-picture {
-    width: 95%;
-    height: 380px;
+  /*Articles*/
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    }
+  h1 {
+    text-align: center;
+    font-size: 1em;
+    padding: 20px 4%;
   }
-
-
-  
-
-
+/*Pages Web*/
+.software-header {
+  height: 400px;
+  color: white;
+  position: relative;
+  z-index: 5;
+  background-image: url("./assets/coding.jpg");
+  background-size: cover;
+}
+.header-picture {
+  width: 95%;
+  height: 380px;
+}
 .logo-contact {
   background-image: url("./assets/lettre.png");
 }
@@ -152,13 +110,10 @@
 
   bottom: 50px;
 }
-
 .nav-item {  
   margin: 1rem 0;
 }
 /*Articles*/
-
-
 article.index {
   background-size: cover;
   width: 70%;
@@ -171,59 +126,88 @@ article.index {
   border: 4px solid rgba(124, 0, 155, 1);
   border-radius: 20px;
 }
-
 a.article {
   font-size: 1.5em;
   text-decoration: none;
   color: #ffffff;
 }
-
 #dev-web {
   background-image: url("./assets/coding.jpg");
 }
-
 #video-games {
   background-image: url("./assets/gamecontroler.jpg");
 }
-
 #software {
   background-image: url("./assets/coding.jpg");
 }
-
 #robotic {
   background-image: url("./assets/robot.jpeg");
 }
-
 #ai {
   background-image: url("./assets/coding.jpg");
 }
-
 #blockchain {
   background-image: url("./assets/coding.jpg");
 }
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
 h3 {
   text-align: center;
-  font-size: 25px; 
+  font-size: 35px; 
   padding: 40px 4%;
   color: #ffffff;
 }
-
 h2 {
   text-align: center;
   padding: 20px 4%;
   font-size: 30px;
   font-family: 'Croissant One', cursive;
 }
-
-.parallax {
+/*Footer & Navbar*/
+.politics {
+    text-align: center;
+}
+.contactUs {
+    padding: 30px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+li {
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+li a:hover {
+    color: rgb(0, 4, 255);
+}
+/*Pages Web*/
+#webHeader {
+    color: aliceblue;
+    width: 100%;
+    height: 500px;
+    background-image: url("assets/PHOTO-web.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+#webImg {
+    width: 100%;
+    padding: 15px;
+}
+@media only screen and (min-width: 600px) {
+    #webImg {
+        width: 800px;
+    }
+}
+#webImg2 {
+    max-height: 660px;
+    max-width: 550px;
+}
+.webLink {
+    font-size: 15px;
+    color: black;
+}
+/* ---------------------------------page video games ------------------------------------ */
+.gamesParallax {
   width: 100%;
   height: 150px;
   background: url(assets/imgparallax.jpg);
@@ -234,152 +218,77 @@ h2 {
   align-items: center;
   flex-direction: column;
 }
-.article {
-  padding: 5%;
+.gamesContainer {
+  padding: 0 1%;
+  margin-bottom: 55px;
 }
-.text-article {
-  font-size: 18px;
-  text-align: left;
-  font-family: 'Courgette', cursive;
-
-}
-
-.suite-article {
-    text-decoration: none;
-    font-size: 20px;
-    padding-left: 20%;
-}
-
-#suite-articlecolorC {
-  color: #3ec6d8;
-}
-#suite-articlecolorPython {
-  color: #3ec6d8;
-}
-/*Footer & Navbar*/
-
-
-/*Footer & Navbar*/
-
-.politics {
-    text-align: center;
-}
-
-.contactUs {
-    padding: 30px;
-    font-size: 40px;
-    text-decoration: underline;
-}
- /* .navbar {
-   height: 200px;
- } */
-
- /* .navbar {
-   height: 200px;
- } */
-
-
-
-li {
-    list-style-type: none;
-}
-
-li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-li a:hover {
-    color: rgb(0, 4, 255);
-}
-
-
-/*Pages Web*/
-/* ---------------------------------page video games ------------------------------------ */
 .headergame{
   text-align: center;
 }
-
-
-#webHeader {
-    color: aliceblue;
-    width: 100%;
-    height: 500px;
-    background-image: url("assets/PHOTO-web.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-
-#webImg {
-    width: 100%;
-    padding: 15px;
-}
-
-@media only screen and (min-width: 600px) {
-    #webImg {
-        width: 800px;
-    }
-}
-
-#webImg2 {
-    max-height: 660px;
-    max-width: 550px;
-}
-
-.webLink {
-    font-size: 15px;
-    color: black;
-}
-
-
-/*Page jeux-vidéos*/
-
-
-.examplecplusplus {
-    display: block;
-    size: 30px;
-}
-
-.examplegame {
-    text-align: center;
-    padding: 10px;
-    font-size: 15px;
-}
-
-.majortitle {
+.gamesMajortitle {
   font-size: 20px;
   text-align: center;
   padding: 40px;
-
 }
-
-.logolangage {
-    width: 50%;
-    height: 50%;
-    margin-left: 25%;
-    margin-bottom: 12%;
-    margin-top: 12%;
+.gamesBlocarticle{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4% 0;
 }
-
-@media screen and (min-width: 768px) and (max-width:1200px) {
-
+.gameImg {
+  width: 300px;
+}
+.gamesLogoLangage {
+    width: 300px;
+    height: 300px;
+}
+.gamesExample{
+  margin: 10px 10px 0 10px;
+  text-align: center;
+}
+.gamesTextArticle {
+  font-family: 'Courgette', cursive;
+  font-size: 16px;
+}
+.gamesArticle {
+    text-align: justify;
+    width: 80%;
+    padding: 6% 0;
+}
+.gamesSuiteArticle {
+  font-size: 20px;
+}
+.gamesExampleLegende {
+  font-size: 16px;
+}
+.gamesBackgroundArticle {
+  background-color: #3ec6d8;
+}
+.gamesSuiteArticleColor {
+  color: #3ec6d8;
+}
+@media screen and (min-width: 800px) {
+  .gamesContainer {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header-picture {
     width: 75%;
     height: 500px;
   }
   h2 {
     font-size: 40px;
+    padding: 4% 0;
   }
-  .majortitle {
+  .gamesMajortitle {
     font-size: 30px;
   }
-  .text-article {
-    font-size: 22px;
+  .gameImg {
+    width: 500px;
   }
 }
-
-
-
 @media screen and (min-width: 1200px) {
   .header-picture {
     width: 60%;
@@ -387,61 +296,54 @@ li a:hover {
   }
   h2 {
     font-size: 50px;
+    padding: 6% 0;
   }
   h3 {
     font-size: 50px;
-  }
-  .parallax {
-    height: 300px;
-  }
-  .container {
-    padding: 0 20%
-  }
-  .blocarticle {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-  }
-  .article {
-    padding: 2%;
-  }
-  #backgroundjava {
-    background-color: #3ec6d8;
-  }
-  #backgroundcsharp {
-    background-color: #3ec6d8;
-  }
-  .logolangage {
-    width: 40%;
-    height: 40%;
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  .articlegame {
-    padding: 0 3%;
   }
   .majortitle {
     padding: 8% 4%;
     font-size: 35px;
   }
-  .text-article {
-    font-size: 26px;
+  .gamesParallax {
+    height: 300px;
   }
+  .gamesBlocarticle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  } 
+  .gameImg {
+      width: 500px;
   }
+  .gamesLogoLangage {
+      width: 300px;
+      height: 300px;
+  }
+  .gamesExamplecPlusPlus{
+    margin: 10px 10px 0 10px;
+  }
+  .gamesArticle {
+      text-align: justify;
+      width: 70%;
+      padding: 0 4%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .gamesTextArticle {
+    font-size: 19px;
+  }
+}
 
 /*Contact*/
-
 form {
     margin: 0 auto;
     width: 100%;
     padding-top: 20px;
 }
-
 label {
     line-height: 2;
 }
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -450,7 +352,6 @@ textarea {
     margin-bottom: 10px;
     height: 30px;
 }
-
 input[type="submit"] {
     background: rgb(71, 180, 199);
     color: white;
@@ -459,15 +360,10 @@ input[type="submit"] {
     width: 70px;
     height: 30px;
 }
-
 #message {
     height: 120px;
 }
-
-
-
 /* ---------------------------------page software ------------------------------------ */
-
 .header-software {
   display: flex;
   flex-direction: column;
@@ -478,7 +374,6 @@ input[type="submit"] {
   background-size: 100% 100%;
   background-repeat: no-repeat;  
 }
-
 .header-software {
   display: flex;
   flex-direction: column;
@@ -489,44 +384,34 @@ input[type="submit"] {
   background-size: 100% 100%;
   background-repeat: no-repeat;  
 }
-
 .separation {
     border-top: 2px solid black;
     width: 100%;
 }
-
 .container {
   padding: 10px 10px;
 }
-
 .header {
     font-size: 2rem;
 }
-
-
 .intro {
     text-align: center;
 }
-
 h2 {
     margin: 20px;
 }
-
 .slider {
     width: 500px;
     overflow: hidden;
     margin: 100px auto;
 }
-
 .slides {
     width: calc(500px * 3);
     animation: glisse 8s infinite;
 }
-
 .slide {
     float: left;
 }
-
 @keyframes glisse {
     0% {
         transform: translateX(0);
@@ -551,19 +436,10 @@ h2 {
     }
 }
 
-@media screen and (min-width: 1500px) {
-    .nav-menu {
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
 @media  screen and (min-width: 1500px) {
-
-  
-  .nav-menu {
+   .nav-menu {
     display: flex;
-    justify-content:space-around;  
+    justify-content: space-around;  
     top: 0;  
     bottom: auto;
     height: 50px;
@@ -575,11 +451,8 @@ h2 {
     margin: 0;
   }
 }
-
-
 @media screen and (min-width: 800px) {
-  
-  .container {
+   .container {
     font-size: 2rem;
   }
   .article {
@@ -589,7 +462,17 @@ h2 {
     transition: 0.5s;
     max-width: 75%; 
   }
-  
+    .hamburger {
+    top: 0;
+    bottom: none;
+  }
+  .nav-menu.active {
+    top: 50px;
+    bottom: auto;    
+  }
+  .top-navbar {
+    visibility: hidden;
+  }
   .hamburger {
     top: 0;
     bottom: none;
@@ -598,33 +481,11 @@ h2 {
     top: 50px;
     bottom: auto;    
   }
-.top-navbar {
-  visibility: hidden;
 }
-
-  
-  .hamburger {
-    top: 0;
-    bottom: none;
-  }
-  .nav-menu.active {
-    top: 50px;
-    bottom: auto;    
-  }
-.top-navbar {
-  visibility: hidden;
-}
-
-
-}
-
-
 /* ---------------button---------------------- */
-
 .button:after {
     background: #080811;
 }
-
 .b-pink,
 .b-pink:before {
     background: rgba(0, 4, 255, 1);
@@ -636,7 +497,6 @@ h2 {
     background: linear-gradient( 45deg, rgba(0, 4, 255, 1) 0%, rgba(124, 0, 155, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1);
 }
-
 .button {
     display: block;
     position: relative;
@@ -649,18 +509,15 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .button:hover {
     text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.75);
 }
-
 .button:hover:after {
     left: 100%;
     top: 100%;
     bottom: 100%;
     right: 100%;
 }
-
 .button:before {
     content: "";
     display: block;
@@ -673,7 +530,6 @@ h2 {
     border-radius: 5px;
     transition: all 0.5s;
 }
-
 .button:after {
     content: "";
     display: block;
@@ -686,18 +542,13 @@ h2 {
     border-radius: 5px;
     transition: all 0.5s;
 }
-
 #contact {
     padding: 30px;
 }
-
 #contactForm {
     width: 400px;
 }
-
-
 /* Page AI */
-
 #aiHeader {
   color: aliceblue;
   width: 100%;
@@ -706,14 +557,10 @@ h2 {
   background-size: cover;
   background-position: center;
 }
-
-
 @media only screen and (min-width: 600px) {
- 
   .header {
     height: 60vh;
   }
-  
   #aiHeader {
     color: aliceblue;
     width: 100%;
@@ -721,8 +568,8 @@ h2 {
     background-image: url("assets/aih.jpg");
     background-size: cover;
     background-position: center;
+  }
 }
-
 @media only screen and (min-width: 600px) {
     #aiHeader {
         color: aliceblue;
@@ -732,44 +579,35 @@ h2 {
         width: 800px;
     }
 }
-
 .aiH3 {
     font-size: 50px;
     text-align: center;
     padding: 15px;
 }
-
 #aiP {
     font-size: 30px;
     padding: 10px;
 }
-
 .aiH4 {
     font-weight: normal;
     font-size: 30px;
 }
-
 span {
     font-size: 20px;
     font-weight: bold;
 }
-
 a {
     font-size: 25px;
 }
-
 #aiPic {
     width: 100%;
     padding: 15px;
 }
-
 @media only screen and (min-width: 600px) {
     #aiPic {
         width: 800px;
     }
 }
-
 #aiH3Vid {
     padding: 20px;
-}
 }

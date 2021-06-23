@@ -4,100 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Croissant+One&display=swap" rel="stylesheet">
     <title>Jeux Vidéos</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
   </head>
   <body>  
-    <header class="headergame">
-      <div class="ctn">    
-        <a class="button b-pink" href="./index.html">WECODE</a>
-      </div>
+    <header class="headergame">      
+      <nav class="navbar">
+        <ul class="nav-menu b-pink">
+          <li class="nav-item"><a href="./index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="./dev-web.html" class="nav-link">Web</a></li>
+          <li class="nav-item"><a href="./video-games.html" class="nav-link">Jeux Videos</a></li>
+          <li class="nav-item"><a href="./software.html" class="nav-link">Logiciels</a></li>
+          <li class="nav-item"><a href="./robotic.html" class="nav-link">Robotique</a></li>
+          <li class="nav-item"><a href="./ai.html" class="nav-link">Intelligence artificielle</a></li>
+          <li class="nav-item"><a href="./blockchain.html" class="nav-link">Blockchain</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger b-pink">          
+          <a href="./index.html"><img class="logo-navbar" src="./assets/home.png" alt=""></a>       
+          <img class="logo-navbar hamburger-click" src="./assets/hamburger.png" alt="">       
+          <a href="./contact.html"><img class="logo-navbar" src="./assets/contact.png" alt=""></a>       
+        </div>
+      </nav>
       <h2>Jeux Vidéos</h2>
       <img class="header-picture" src="assets/gamecontroler.jpg" alt="Header picture game" />
+      <p class="gamesMajortitle">
+        Dans cette rubrique, vous découvrirez les langages utilisés pour développer des jeux vidéos  
+      </p>
     </header>
-    <p class="majortitle">
-      Dans cette rubrique, vous découvrirez les langages utilisés pour développer des jeux vidéos  
-    </p>
-    <section class="container">
-      <div class="parallax">
-        <h3>Les languages</h3>
-      </div>
-      <article class="blocarticle">
-        <img class="logolangage" src="assets/c++.png" alt="C++ logo" /> 
-        <div class="articlegame">
-          <p class="text-article"> Le C++ est le langage de programmation le plus utilisé dans le jeu vidéo, mais aussi d’une grande partie de l’informatique en général. C’est le langage utilisé par la plupart des plus grands moteur de jeu (Unity, Unreal Engine, Godot, GameMaker…). De bas niveau, il est donc assez difficile à appréhender au départ. Il est nécessaire de s’entraîner afin de comprendre la manière dont ce langage à la logique rigide fonctionne. Il est conçu pour être extrêmement malléable une fois qu’on en a assimilé les subtilités. Il est particulièrement populaire dans le jeu vidéo car il permet d’exercer un contrôle plus direct sur les processus liés à la mémoire et ressources graphiques. Le fait qu’il soit utilisé par tant de développeurs en fait également un langage très documenté. Jeux créés avec C++ : La quasi-totalité des jeux vidéo modernes
-          </p> 
-          <a class="suite-article" id="suite-articlecolorC" href="https://www.campus-des-ecoles.fr/gaming/actus/apprendre-coder-jeu-video-c/">Suite de l'article ici...</a>
-        </div>
-        <div class="examplecplusplus">
-          <img src="assets/screenwow.png" alt="wow picture" />
-          <p class="examplegame">World of Warcraft développé par Blizzard.</p>
-          <img src="assets/skyrim.jpg" alt="skyrim picture" />
-          <p class="examplegame">Skyrim développé par Bethesda.</p>      
-        </div>     
-      </article>
-      <article class="blocarticle" id="backgroundjava">
-        <img class="logolangage" src="assets/java.png" alt="java logo" />
-        <div class="articlegame">
-          <p class="text-article">
-            Langage très proche du C++, il s’agit généralement de la seconde corde à l’arc des programmeurs. Java propose une caractéristique assez unique : son code n’a pas besoin d’être recompilé. En d’autres termes, une application Java fonctionnera exactement de la même manière sur toutes les machines et systèmes (pour peu qu’ils supportent Java). Cela lui permet de franchir la plupart des barrières et d’exporter facilement un jeu ou un programme sur de nombreuses plateformes : PC, Mac, Linux, Android, IOS… Jeux créés sous Java : Minecraft, Runescape, Angry Birds, Mugen, Wakfu
-          </p>
-          <a class="suite-article" href="#">Suite de l'article ici...</a>
-        </div>
-        <div class="examplecplusplus">
-        <img src="assets/minecraft.png" alt="minecraft picture" />
-        <p class="examplegame">Minecraft développé par Mojang.</p>
-        </div>
+    <div class="gamesParallax">
+      <h3>Les langages</h3>
+    </div>
+      <section class="gamesContainer">
+        <article class="gamesBlocarticle">
+          <img class="gamesLogoLangage" src="assets/c++.png" alt="C++ logo" /> 
+          <div class="gamesArticle">
+            <p class="gamesTextArticle"> Le C++ est le langage de programmation le plus utilisé dans le jeu vidéo, mais aussi d’une grande partie de l’informatique en général. C’est le langage utilisé par la plupart des plus grands moteur de jeu (Unity, Unreal Engine, Godot, GameMaker…). De bas niveau, il est donc assez difficile à appréhender au départ. Il est nécessaire de s’entraîner afin de comprendre la manière dont ce langage à la logique rigide fonctionne. Il est conçu pour être extrêmement malléable une fois qu’on en a assimilé les subtilités. Il est particulièrement populaire dans le jeu vidéo car il permet d’exercer un contrôle plus direct sur les processus liés à la mémoire et ressources graphiques. Le fait qu’il soit utilisé par tant de développeurs en fait également un langage très documenté. Jeux créés avec C++ : La quasi-totalité des jeux vidéo modernes
+            </p> 
+            <a class="gamesSuiteArticle gamesSuiteArticleColor" href="https://www.campus-des-ecoles.fr/gaming/actus/apprendre-coder-jeu-video-c/">Suite de l'article ici...</a>
+          </div>
+          <div class="gamesExample">
+            <img class='gameImg' src="assets/screenwow.png" alt="wow picture" />
+            <p class="gamesExampleLegende">World of Warcraft développé par Blizzard.</p>
+            <img class='gameImg'src="assets/skyrim.jpg" alt="skyrim picture" />
+            <p class="gamesExampleLegende">Skyrim développé par Bethesda.</p>      
+          </div>     
         </article>
-      <article class="blocarticle">
-        <img class="logolangage" src="assets/python.png" alt="python logo" />
-        <div class="articlegame">
-          <p class="text-article">
+        <article class="gamesBlocarticle gamesBackgroundArticle">
+          <img class="gamesLogoLangage" src="assets/java.png" alt="java logo" />
+          <div class="gamesArticle">
+            <p class="gamesTextArticle">
+            Langage très proche du C++, il s’agit généralement de la seconde corde à l’arc des programmeurs. Java propose une caractéristique assez unique : son code n’a pas besoin d’être recompilé. En d’autres termes, une application Java fonctionnera exactement de la même manière sur toutes les machines et systèmes (pour peu qu’ils supportent Java). Cela lui permet de franchir la plupart des barrières et d’exporter facilement un jeu ou un programme sur de nombreuses plateformes : PC, Mac, Linux, Android, IOS… Jeux créés sous Java : Minecraft, Runescape, Angry Birds, Mugen, Wakfu
+            </p>
+            <a class="gamesSuiteArticle" href="https://www.campus-des-ecoles.fr/gaming/actus/apprendre-coder-jeu-video-c/">Suite de l'article ici...</a>
+          </div>
+          <div class="gamesExample">
+            <img class='gameImg' src="assets/minecraft.png" alt="minecraft picture" />
+            <p class="gamesExampleLegende">Minecraft développé par Mojang.</p>
+          </div>
+        </article>
+        <article class="gamesBlocarticle">
+        <img class="gamesLogoLangage" src="assets/python.png" alt="python logo" />
+        <div class="gamesArticle">
+          <p class="gamesTextArticle">
             Python est un langage de programmation de haut niveau, qui privilégie la lisibilité aux performances brutes. C’est un langage assez populaire pour développer des applications et des programmes. Python est assez rarement utilisé pour des jeux complexes, mais il peut servir d’une bonne base d’entrainement pour quelques projets plus simples.
-            <br>
-            <br>
-            Jeux réalisés sous Python : Eve Online, Doki Doki Literature Club, Civilization IV, Pong, Space Invader
+            Jeux réalisés sous Python : Eve Online, Doki Doki Literature Club, Civilization IV, Pong, Space Invader.
           </p>
-          <a class="suite-article" id="suite-articlecolorPython" href="#">Suite de l'article ici...</a>
+          <a class="gamesSuiteArticle gamesSuiteArticleColor" href="https://www.campus-des-ecoles.fr/gaming/actus/apprendre-coder-jeu-video-c/">Suite de l'article ici...</a>
         </div>
-        <div class="examplecplusplus">
-        <img src="assets/Mario.png" alt="mariobros picture" />
-        <p class="examplegame">Super Mario Python développé par HJ avec PyGame reprenant le jeux culte Super Mario Bros développé par Nintendo.</p>
+        <div class="gamesExample">
+        <img class='gameImg' src="assets/Mario.png" alt="mariobros picture" />
+        <p class="gamesExampleLegende">Super Mario Python développé par HJ avec PyGame.</p>
         </div>
       </article>
-      <article class="blocarticle" id="backgroundcsharp">
-        <img class="logolangage" src="assets/csharp.png" alt="csharp logo" />
-        <div class="articlegame">
-          <p class="text-article">C# (prononcé « C Sharp ») est un langage de programmation moderne, orienté objet et de type sécurisé. Il permet aux développeurs de créer de nombreux types d’applications sécurisées et fiables qui s’exécutent dans l’écosystème .NET (prononcé « dotnet »). Ce langage prend sa source dans la famille de langages C et sera immédiatement reconnaissable aux programmeurs en C, C++, Java et JavaScript. Cette visite guidée fournit une vue d’ensemble des principaux composants du langage dans C# 8 et versions antérieures. Si vous souhaitez explorer le langage par le biais d’exemples interactifs, consultez la présentation des didacticiels C# .<p>
-          <a class="suite-article" href="https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/">Suite de l'article ici...</a>
+      <article class="gamesBlocarticle gamesBackgroundArticle">
+        <img class="gamesLogoLangage" src="assets/csharp.png" alt="csharp logo" />
+        <div class="gamesArticle">
+          <p class="gamesTextArticle">C# (prononcé « C Sharp ») est un langage de programmation moderne, orienté objet et de type sécurisé. Il permet aux développeurs de créer de nombreux types d’applications sécurisées et fiables qui s’exécutent dans l’écosystème .NET (prononcé « dotnet »). Ce langage prend sa source dans la famille de langages C et sera immédiatement reconnaissable aux programmeurs en C, C++, Java et JavaScript. Cette visite guidée fournit une vue d’ensemble des principaux composants du langage dans C# 8 et versions antérieures. Si vous souhaitez explorer le langage par le biais d’exemples interactifs, consultez la présentation des didacticiels C# .<p>
+          <a class="gamesSuiteArticle" href="https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/">Suite de l'article ici...</a>
         </div>
-        <div class="examplecplusplus">
-        <img src="assets/Hearthstone.png" alt="hearthstone picture" />
-        <p class="examplegame">Hearthstone développé par Blizzard.</p>
+        <div class="gamesExample">
+        <img class='gameImg' src="assets/Hearthstone.png" alt="hearthstone picture" />
+        <p class="gamesExampleLegende">Hearthstone développé par Blizzard.</p>
         </div>
       </article>
     </section>
-    <nav class="navbar">
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="./index.html" class="nav-link">Accueil</a></li>
-        <li class="nav-item"><a href="./dev-web.html" class="nav-link">Web</a></li>
-        <li class="nav-item"><a href="./video-games.html" class="nav-link">Jeux Videos</a></li>
-        <li class="nav-item"><a href="./software.html" class="nav-link">Logiciels</a></li>
-        <li class="nav-item"><a href="./robotic.html" class="nav-link">Robotique</a></li>
-        <li class="nav-item"><a href="./ai.html" class="nav-link">Intelligence artificielle</a></li>
-        <li class="nav-item"><a href="./blockchain.html" class="nav-link">Blockchain</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-    <footer>
-      <a href="./mentionlegales.html">Mentions légales et Politique de confidentialité</a>
-    </footer>
     <script src="script.js"></script>
   </body>
 </html>
