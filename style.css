@@ -167,11 +167,10 @@ article {
 }
 
 .top-navbar{
-
   height: 0.8em;
   width: 100%; 
-  position: absolute;  
-  margin-left: auto ;
+  position: fixed;  
+  margin-left: auto;
   cursor: pointer;
 }
 
