@@ -141,12 +141,6 @@ body.index {
 
 /*Pages Web*/
 
- 
-
-  .header-picture {
-    width: 95%;
-    height: 380px;
-  }
 
 
 
@@ -290,7 +284,6 @@ h3 {
 
 .header-picture {
   width: 95%;
-  height: 380px;
 }
 .logo-contact {
   background-image: url("./assets/lettre.png");
@@ -819,8 +812,11 @@ h2 {
 
 #contact {
     padding: 30px;
+    margin-bottom: 10%;
 }
-#contactForm {
+
+@media screen and (min-width: 800px) {
+  #contactForm {
     width: 400px;
 }
 /*----------------------- Page AI ------------------------*/
