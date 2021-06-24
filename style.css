@@ -24,6 +24,7 @@
     text-transform: uppercase;
     text-align: center;
   }
+
   .nav-menu {
     opacity: 75%; 
     height: auto;
@@ -34,6 +35,7 @@
     transition: 0.5s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
+
   .hamburger {
     display: flex;
     justify-content: space-around;
