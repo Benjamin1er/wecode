@@ -58,8 +58,10 @@ const message =
 "Merci de votre retour, l'équipe Raccoon vous répondra dans les meilleurs délais :)";
 
 document
+
 .getElementById("contactForm")
 .addEventListener("submit", function (event) {
   event.preventDefault();
   alert(message);
 });
+
