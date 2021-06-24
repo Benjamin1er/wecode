@@ -7,53 +7,88 @@
     <link type="text/css" rel="stylesheet" href="style.css" />
     <title>Robotique</title>
   </head>
-  <body>    
-    <header>
-      <div class="ctn">    
-        <a class="button b-pink" href="./index.html">WECODE</a>        
+  <body> 
+    <nav class="navbar">
+      <ul class="nav-menu b-pink">
+        <li class="nav-item"><a href="./dev-web.html" class="nav-link">Web</a></li>
+        <li class="nav-item"><a href="./video-games.html" class="nav-link">Jeux Videos</a></li>
+        <li class="nav-item"><a href="./software.html" class="nav-link">Logiciels</a></li>
+        <li class="nav-item"><a href="./robotic.html" class="nav-link">Robotique</a></li>
+        <li class="nav-item"><a href="./ai.html" class="nav-link">Intelligence artificielle</a></li>
+        <li class="nav-item"><a href="./blockchain.html" class="nav-link">Blockchain</a></li>
+      </ul>
+      <div class="hamburger b-pink">          
+        <a href="./index.html"><img class="logo-navbar" src="./assets/home.png" alt="logo home"></a>       
+        <img class="logo-navbar hamburger-click" src="./assets/hamburger.png" alt="logo hamburger">       
+        <a href="./contact.html"><img class="logo-navbar" src="./assets/contact.png" alt="logo contact"></a>       
       </div>
-      <img id="rob-header-picture" src="assets/roboth.jpg" alt="Header picture" />
-    </header>
-    <section class="container">
+    </nav>     
+    <header class="headergame">      
       <h2 id="robH2">Robotique</h2>
-        <img id="imgH2" src="assets/robotheader.jpg" alt="Photo Robot">
-          <h3>Un peu d'histoire</h3>
-            <p>Avant de se demander ce qu'est la robotique, commençons par un peu d'étymologie. Le terme robot a été inventé pour une pièce de théatre
-              de science fiction écrite en 1920, dérivé du mot tchèque "Roboto" que l'on peut traduire par "travail, corvée". Quoi de plus normal que
-              de donner ce nom aux machines capables aujourd'hui d'automatiser nos tâches ? </br>
-              Dans la pièce de Karel Čapek, les robots étaient des humains fabriqués par des propriétaires d'usine qui les exploitaient. Nulle précision
-              sur la nature mécanique ou biologique de ces "robots", mais ces derniers finiront par se retourner contre leurs créateurs.</br>
-              C'est 22 ans plus tard en écrivant <i>Runaround</i> qu'Isaac Asimov créera le terme robotique et délaissa le syndrome de Frankenstein
-              pour s'intéresser aux problèmes de société auxquels les humains se heurteront quand les robots seront omniprésents et auront automatisés
-              la quasi-totalité de nos tâches.
-            </p>
-          <figure>
-            <img id="unimate" src="assets/firstrob.jpg" alt="Unimate">
-            <figcaption>Unimate, le premier robot de l'histoire. By Christoph Roser at AllAboutLean.com under the free CC-BY-SA 4.0 license.</figcaption>
-          </figure>
-          <h3>Les premiers robots</h3>
-            <p>En 1954 Georges Devol crée le premier robot, Unimate, qui sera livré à General Motors pour accomplir des tâches dangereuses pour les
+      <img class="header-picture" src="assets/roboth.jpg" alt="Header picture" />
+    </header>
+    <div class="roboticParallax">
+      <p class="moneytitle">
+        Bienvenu dans le monde des machines 
+      </p>
+    </div>
+    <section class="container">
+      <article class="gamesBlocarticle">
+        <h4 class="blockchaintitle">Un peu d'histoire</h4>
+        <figure>
+        <img class="gamesExampleLegende" id="imgH2" src="assets/robotheader.jpg" alt="Photo Robot">
+        <figcaption class="gamesExampleLegende">La robotisation</figcaption>
+        </figure>
+        <div class="gamesArticle"> 
+          <p class="gamesTextArticle">Avant de se demander ce qu'est la robotique, commençons par un peu d'étymologie. Le terme robot a été inventé pour une pièce de théatre
+            de science fiction écrite en 1920, dérivé du mot tchèque "Roboto" que l'on peut traduire par "travail, corvée". Quoi de plus normal que
+            de donner ce nom aux machines capables aujourd'hui d'automatiser nos tâches ? </br>
+            Dans la pièce de Karel Čapek, les robots étaient des humains fabriqués par des propriétaires d'usine qui les exploitaient. Nulle précision
+            sur la nature mécanique ou biologique de ces "robots", mais ces derniers finiront par se retourner contre leurs créateurs.</br>
+            C'est 22 ans plus tard en écrivant <i>Runaround</i> qu'Isaac Asimov créera le terme robotique et délaissa le syndrome de Frankenstein
+            pour s'intéresser aux problèmes de société auxquels les humains se heurteront quand les robots seront omniprésents et auront automatisés
+            la quasi-totalité de nos tâches.
+          </p>
+        
+      </div>
+    </article>
+    <article class="gamesBlocarticle">
+      <h4 class="blockchaintitle">Les premiers robots</h4>
+      <figure>
+        <img class='gameImg' id="unimate" src="assets/firstrob.jpg" alt="Unimate">
+        <figcaption class="gamesExampleLegende">Unimate, le premier robot de l'histoire. By Christoph Roser at AllAboutLean.com <br>under the free CC-BY-SA 4.0 license.</figcaption>
+      </figure>
+      <div class="gamesArticle">
+            <p class="gamesTextArticle">En 1954 Georges Devol crée le premier robot, Unimate, qui sera livré à General Motors pour accomplir des tâches dangereuses pour les
               employés de l'usine. Unimate est un bras de levage hydraulique à commande électronique capable de répéter des séquences arbitraires de mouvements.
               Pourquoi abitraires ? Parce que d'après Joseph Engelberger, créateur d'Unimation Inc et père de la robotique, une machine automatisée capable d'un seul mouvement
               répété n'est pas un robot, mais un simple automate </p>
-          <figure>
-            <img id="rover" src="assets/rover.jpg" alt="Rover">
-            <figcaption>Life on Mars ? Rover nous le dira !</figcaption>
-          </figure>  
-          <h3>Les robots d'aujourd'hui</h3>
-            <p>Mais où en est-on de la robotique à notre époque ?</br>Cette dernière a bien évolué depuis Unimate (même si cette unité est encore utilisée
+            </div>
+          </article>
+          <article class="gamesBlocarticle">
+            <h4 class="blockchaintitle">Les robots d'aujourd'hui</h4>
+            <figure>
+              <img class='gameImg' id="rover" src="assets/rover.jpg" alt="Rover">
+              <figcaption class="gamesExampleLegende">Life on Mars ? Rover nous le dira !</figcaption>
+            </figure>  
+            <div class="gamesArticle">
+            <p class="gamesTextArticle">Mais où en est-on de la robotique à notre époque ?</br>Cette dernière a bien évolué depuis Unimate (même si cette unité est encore utilisée
               dans bon nombre d'usines), mais nous sommes encore loin des androïdes doués de réflexion qu'imaginait Asimov dans les années 50 (le deep learning
               est une pratique encore très récente, mais pour ça je vous invite à lire <a href="ai.html">notre super article sur l'intelligence artificielle</a>),
               mais la robotique n'en est pas moins omniprésente ; Dans la médecine avec des robots capables d'opérer des patients, dans l'exploration spatiale
               avec Spirit et Opporunity (entre autres) qui sillonent le sol de Mars, dans le domaine militaire où l'on peut trouver des drônes et des chiens
               tout-terrain capables de porter de lourdes charges, et surtout dans nos maisons, où nous automatisons nos tâches ménagères grâce aux robots
               aspirateurs, tondeuses à gazons, nettoyeurs de piscines...</p>
-          <figure>
-            <img id="metiersRobotique" src="assets/metiersRobotique.jpg" alt="Les Métiers de la robotique">
-            <figcaption>- Murielle, tu sais comment ça marche ça ?</figcaption>
-          </figure>
-          <h3>Les métiers</h3>
-            <p>Le concepteur de robot : Un expert en robotique doit maîtriser un grand nombre de domaines d’expertise. Il doit à la fois travailler à la
+            </div>
+          </article>
+          <article class="gamesBlocarticle">
+            <h4 class="blockchaintitle">Les métiers</h4>
+            <figure>
+              <img class='gameImg' id="metiersRobotique" src="assets/metiersRobotique.jpg" alt="Les Métiers de la robotique">
+              <figcaption class="gamesExampleLegende">- Murielle, tu sais comment ça marche ça ?</figcaption>
+            </figure>
+            <div class="gamesArticle">
+            <p class="gamesTextArticle">Le concepteur de robot : Un expert en robotique doit maîtriser un grand nombre de domaines d’expertise. Il doit à la fois travailler à la
               conception du robot et à sa programmation. Ce qui suppose des connaissances en mécanique, en électronique et en informatique embarquée.
               Le mécatronicien : A la croisée de la mécanique, de l'électronique et de l'informatique, le mécatronicien conçoit des systèmes embarqués
               toujours plus intelligents et miniaturisés. Intervenant dans les secteurs de l’automobile ou de la Défense, il maîtrise les logiciels
@@ -62,12 +97,16 @@
               L’opérateur va programmer le bras articulé en fonction de la production en cours sur la chaîne de fabrication. <br>
               Le technicien de maintenance : Connaissant tout du fonctionnement des machines-outils et autres commandes numériques,
               le technicien de maintenance assure le suivi et l’entretien des robots industriels.</p>
-          <figure>
-            <img id="C++" src="assets/C.png" alt="C++">
-            <figcaption>Le C++, un language qui envoie du pâté</figcaption>
-          </figure>
-          <h3>Les langages utilisés</h3>
-            <p>Le C/C++ : Quoi de mieux que le C++ pour garantir de bonnes performance aux robots ? En plus d'être un langage puissant, le C++ possède
+            </div>
+          </article>
+          <article class="gamesBlocarticle">
+            <h4 class="blockchaintitle">Les langages utilisés</h4>
+            <figure>
+              <img class="gamesLogoLangage" id="C++" src="assets/C.png" alt="C++">
+              <figcaption class="gamesExampleLegende">Le C++, un language qui envoie du pâté</figcaption>
+            </figure>
+            <div class="gamesArticle">
+            <p class="gamesTextArticle">Le C/C++ : Quoi de mieux que le C++ pour garantir de bonnes performance aux robots ? En plus d'être un langage puissant, le C++ possède
                 un grand nombre d'outils, de bibliothèques et de fonctions utiles à la robotique. Le C quant à lui sera préféré pour les robots dont
                 la mémoire est limité, ce langage étant plus précis dans la gestion de chaque octet. <br>
                 Le Python : Sûrement le plus populaire, et l'un des plus faciles d'utilisation. Comme le C/C++, il possède l'avantage d'être disponible
@@ -86,27 +125,10 @@
                 De nombreuses interfaces homme-machine (IHM) sont développées en C#. Une IHM fait souvent partie des systèmes dits de supervision,
                 contrôle et acquisition des données (SCADA).
             </p>
+          </div>
+      </article>
     </section>
-    <footer>
-      <a href="#">Mentions légales et Politique de confidentialité</a>
-    </footer>
-    <nav class="navbar">
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="./dev-web.html" class="nav-link">Web</a></li>
-        <li class="nav-item"><a href="./video-games.html" class="nav-link">Jeux Videos</a></li>
-        <li class="nav-item"><a href="./software.html" class="nav-link">Logiciels</a></li>
-        <li class="nav-item"><a href="./robotic.html" class="nav-link">Robotique</a></li>
-        <li class="nav-item"><a href="./ai.html" class="nav-link">Intelligence artificielle</a></li>
-        <li class="nav-item"><a href="./blockchain.html" class="nav-link">Blockchain</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-    </nav>
-    
+       
     <script src="script.js"></script>
   </body>
 </html>
