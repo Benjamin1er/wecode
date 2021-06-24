@@ -7,12 +7,16 @@
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 
   }
 /*En tête du site*/
 
-
+.titleAnim {
+  color: rgba(124, 0, 155, 1);
+  font-size: 15vw;
+  text-shadow: 2px 2px white, 2px -2px white, -2px 2px white, 2px -2px white;
+}
 #target {  
   position: absolute;
   display: flex;
@@ -151,6 +155,7 @@
     box-shadow: 4px 4px 4px 4px rgba(124, 0, 155, 0.5);
   }
 
+  
   a.indexArticle {
     font-size: 8vw;
     text-decoration: none;
@@ -248,14 +253,7 @@ article {
 }
 
 /*Pages Web*/
-.software-header {
-  height: 400px;
-  color: white;
-  position: relative;
-  z-index: 5;
-  background-image: url("./assets/coding.jpg");
-  background-size: cover;
-}
+
 .header-picture {
   width: 95%;
   height: 380px;
@@ -390,34 +388,20 @@ li a:hover {
   flex-direction: column;
   padding: 4% 0;
 }
-
-@media screen and (min-width: 768px) and (max-width:1200px) {
-
 .gameImg {
-  width: 300px;
-}
-.gamesLogoLangage {
-    width: 300px;
-    height: 300px;
-}
-.gamesExample{
-  margin: 10px 10px 0 10px;
-  text-align: center;
-}
-.gamesTextArticle {
-  font-family: 'Courgette', cursive;
-  font-size: 16px;
-}
-.gamesArticle {
-    text-align: justify;
-    width: 80%;
-    padding: 6% 0;
+  width: 250px;
 }
 .gamesSuiteArticle {
-  font-size: 20px;
+  font-size: 18px;
+}
+.gamesArticle {
+  text-align: justify;
+  width: 90%;
+  padding: 6% 0;
 }
 .gamesExampleLegende {
-  font-size: 16px;
+  font-size: 14px;
+  text-align: center;
 }
 .gamesBackgroundArticle {
   background-color: #3ec6d8;
@@ -425,15 +409,44 @@ li a:hover {
 .gamesSuiteArticleColor {
   color: #3ec6d8;
 }
-}
 
-@media screen and (min-width: 800px) {
-  .gamesContainer {
-    margin-bottom: 5px;
+@media screen and (min-width: 768px) and (max-width:1200px) {
+
+  .titleAnim {
+    font-size: 5vw;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-
+  #grosTitre {
+    justify-content: flex-start;
+  }
+  .header {
+    height: 60vh;
+  }
+  .gameImg {
+    width: 300px;
+  }
+  .gamesLogoLangage {
+      width: 300px;
+      height: 300px;
+  }
+  .gamesExample{
+    margin: 10px 10px 0 10px;
+    text-align: center;
+  }
+  .gamesTextArticle {
+    font-family: 'Courgette', cursive;
+    font-size: 16px;
+  }
+  .gamesArticle {
+      text-align: justify;
+      width: 80%;
+      padding: 6% 0;
+  }
+  .gamesSuiteArticle {
+    font-size: 20px;
+  }
+  .gamesExampleLegende {
+    font-size: 16px;
+  }
   .header-picture {
     width: 75%;
     height: 500px;
@@ -450,7 +463,23 @@ li a:hover {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .gamesContainer {
+    margin-bottom: 5px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+
+  .titleAnim {
+    font-size: 5vw;
+  }
+  #grosTitre {
+    justify-content: flex-start;
+  }
+  .header {
+    height: 60vh;
+  }
   .header-picture {
     width: 60%;
     height: 600px;
@@ -526,10 +555,19 @@ input[type="submit"] {
 }
 /* ---------------------------------page software ------------------------------------ */
 
+.software-header {
+  height: 400px;
+  color: white;
+  position: relative;
+  z-index: 5;
+  background-image: url("./assets/coding.jpg");
+  background-size: cover;
+}
 
 .software-header {
   height: 400px;
 }
+
 .header-software {
   display: flex;
   flex-direction: column;
@@ -543,9 +581,14 @@ input[type="submit"] {
   background-size: cover;
 }
 
+.soft-header-title {
+  color: white;
+  padding: 10%;
+}
+
 .soft-title {
   padding: 20px;
- color: black;
+ color: rgb(0, 0, 0);
 }
 
 .soft-container {
@@ -553,13 +596,14 @@ input[type="submit"] {
   align-items:baseline;
   flex-wrap: wrap;
   display: flex;
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(255, 255, 255);
 }
+
 .soft-article {
-  margin: auto;
-padding: 20px;
-  background-color: #fff;
-  /* width: 90%; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4% 0;
 }
 .soft-intro {
   margin: auto;
@@ -567,7 +611,7 @@ padding: 20px;
   padding: 20px;
 }
 .soft-pict {
-  margin: 0 25% 0 25%;
+  margin: 0 5% 0 5%;
 }
 .softH4 {
   padding: 10px;
@@ -671,7 +715,6 @@ h2 {
 
   a.indexArticle {
     font-size: 5vw;
-  
   }
 }
  
@@ -705,10 +748,8 @@ h2 {
     bottom: auto;    
   }
 }
-/* ---------------button---------------------- */
-.button:after {
-    background: #080811;
-}
+/* ---------------b-pink---------------------- */
+
 .b-pink,
 .b-pink:before {
     background: rgba(0, 4, 255, 1);
@@ -721,6 +762,7 @@ h2 {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1);
 }
 
+/* ----------------------------------------------- */
 
 #contact {
     padding: 30px;
@@ -728,14 +770,14 @@ h2 {
 #contactForm {
     width: 400px;
 }
-/* Page AI */
+/*----------------------- Page AI ------------------------*/
+
 #aiHeader {
+  text-align: center;
   color: rgb(14, 15, 15);
-  height: 150px;
-  padding: 20px;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
+  width: 55%;
+  height: 500px ;
+  /* flex-direction: column; */
 }
 
 #aiPicHeader {
@@ -745,40 +787,18 @@ h2 {
 }
 
 .aiContainer {
-  margin: 10%;
+  box-sizing: border-box;
 
 }
 
 
 
-
-@media only screen and (min-width: 600px) {
-  .header {
-    height: 60vh;
-  }
-  #aiHeader {
-    color: aliceblue;
-    width: 100%;
-    height: 500px;
-    background-image: url("assets/aih.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media only screen and (min-width: 600px) {
-    #aiHeader {
-        color: aliceblue;
-        height: 500px;
-        background-image: url("assets/aih.jpg");
-        background-size: cover;
-        width: 800px;
-    }
-}
 
 .aiH3 {
     font-size: 35px;
     text-align: center;
-    padding: 70px;
+    margin: 40px;
+    padding: 15px;
     color: black;
 }
 
@@ -865,6 +885,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+ 
   .aiBlocarticle {
     flex-direction: column;
   }

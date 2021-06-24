@@ -19,6 +19,7 @@ let letterIndex = 0;
 
 const createLetter = () => {
   const letter = document.createElement("span");
+  letter.setAttribute("class","titleAnim");
   target.appendChild(letter);
 
   letter.textContent = array[wordIndex][letterIndex];
