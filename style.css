@@ -36,10 +36,12 @@
     text-transform: uppercase;
     text-align: center;
   }
+
   .navbar {
     display: flex;
   }  
   
+
   .nav-menu {
     opacity: 75%; 
     height: auto;
@@ -51,14 +53,6 @@
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
-  .top-navbar{    
-    opacity: 75%;
-    height: 50px;
-    width: 100%;  
-    position: fixed;
-    top: 0; 
-    display: block;
-  }
 
   .hamburger {
     display: flex;
