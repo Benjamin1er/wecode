@@ -7,7 +7,7 @@
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
   }
 /*En tête du site*/
@@ -24,6 +24,7 @@
   .b-pink {
     text-align: center;
   }
+
 
   #description {
     padding: 0% 10% 0% 5%;
@@ -721,13 +722,28 @@ h2 {
 }
 /* Page AI */
 #aiHeader {
-  color: aliceblue;
-  width: 100%;
-  height: 500px;
-  background-image: url("assets/aih.jpg");
-  background-size: cover;
-  background-position: center;
+  color: rgb(14, 15, 15);
+  height: 150px;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
+
+#aiPicHeader {
+  border-radius: 10px;
+  display: flex;
+  width: 800px;
+}
+
+.aiContainer {
+  margin: 10%;
+
+}
+
+
+
+
 @media only screen and (min-width: 600px) {
   .header {
     height: 60vh;
@@ -750,39 +766,114 @@ h2 {
         width: 800px;
     }
 }
+
 .aiH3 {
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
-    padding: 15px;
+    padding: 70px;
+    color: black;
 }
-#aiP {
-    font-size: 30px;
-    padding: 10px;
-}
+
 .aiH4 {
-    font-weight: normal;
-    font-size: 30px;
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Courgette', cursive;
 }
 span {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
 }
 a {
     font-size: 25px;
 }
-#aiPic {
-    width: 100%;
-    padding: 15px;
-}
-@media only screen and (min-width: 600px) {
-    #aiPic {
-        width: 800px;
-    }
-}
-#aiH3Vid {
-    padding: 20px;
+
+#aiPic1 {
+  border-radius: 10px;
+  width: 700px;
+  height: 350px;
 }
 
+#aiPic2 {
+  border-radius: 10px;
+  height: 350px;
+  width: 40%;
+  padding: 15px;
+ 
+}
+
+.aiLink {
+  text-align: center;
+  font-size: 17px;
+  color: #0a0a88;
+}
+
+#aiVideo {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+}
+#aiH3Vid {
+  font-size: 30px;
+  color: black;
+  padding: 30px;
+}
+
+.aiBlocarticle {
+  display: flex;
+  align-items: center;
+}
+
+.aiArticle {
+  font-size: 17px;
+  text-align: justify;
+  width: 80%;
+  padding: 5px;
+}
+
+
+#aiHeader {
+  color: rgb(14, 15, 15);
+  height: 500px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .aiBlocarticle {
+    flex-direction: column;
+  }
+
+  #aiPic2 {
+    width: 60%;
+    height: 350px;
+  }
+
+  #aiPic1 {
+    padding: 10px;
+    border-radius: 10px;
+    width: 700px;
+    height: 350px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .aiBlocarticle {
+    flex-direction: column;
+  }
+
+  #aiPic2 {
+    width: 60%;
+    height: 200px;
+  }
+
+  #aiPic1 {
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+  }
+
+}
 
 .blockchaintitle {
   text-align: center;
@@ -808,4 +899,5 @@ a {
   color: white;
   text-align: center;
 }
+
 
