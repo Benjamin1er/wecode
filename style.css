@@ -12,6 +12,7 @@
   }
 /*En tête du site*/
 
+
 #target {  
   position: absolute;
   display: flex;
@@ -149,7 +150,7 @@
     box-shadow: 4px 4px 4px 4px rgba(124, 0, 155, 0.5);
   }
 
-  a.article {
+  a.indexArticle {
     font-size: 8vw;
     text-decoration: none;
     color: #ffffff;
@@ -245,32 +246,6 @@ article {
   color: #3ec6d8;
 }
 
-/*Footer & Navbar*/
-
-
-  /*Image d'accueil*/
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 50vh;
-    color: white;
-    position: relative;
-    /* z-index: 5; */
-    background-image: url("assets/header.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  /*Articles*/
-  a {
-    text-decoration: none;
-    color: #ffffff;
-    }
-  h1 {
-    text-align: center;
-    font-size: 1em;
-    padding: 20px 4%;
-  }
 /*Pages Web*/
 .software-header {
   height: 400px;
@@ -294,55 +269,6 @@ article {
 .nav-item {  
   margin: 1rem 0;
 }
-/*Articles*/
-article.index {
-  background-size: cover;
-  width: 70%;
-  height: 50%;
-  text-align: center;
-  padding: 20px 4%;
-  margin: 3%;
-  font-size: 0.6em;
-  font-family: 'Croissant One', cursive;
-  border: 4px solid rgba(124, 0, 155, 1);
-  border-radius: 20px;
-}
-a.article {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #ffffff;
-}
-#dev-web {
-  background-image: url("./assets/coding.jpg");
-}
-#video-games {
-  background-image: url("./assets/gamecontroler.jpg");
-}
-#software {
-  background-image: url("./assets/coding.jpg");
-}
-#robotic {
-  background-image: url("./assets/robot.jpeg");
-}
-#ai {
-  background-image: url("./assets/coding.jpg");
-}
-#blockchain {
-  background-image: url("./assets/coding.jpg");
-}
-h3 {
-  text-align: center;
-  font-size: 35px; 
-  padding: 40px 4%;
-  color: #ffffff;
-}
-h2 {
-  text-align: center;
-  padding: 20px 4%;
-  font-size: 30px;
-  font-family: 'Croissant One', cursive;
-}
-/*Footer & Navbar*/
 
 .politics {
     text-align: center;
@@ -365,15 +291,7 @@ h2 {
     0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
-.top-navbar{
-  text-align: left;
-  opacity: 90%;
-  height: 50px;
-  width: 100%;  
-  position: fixed;
-  top: 0; 
-  display: block;  
-}
+
 
 .hamburger {
   display: flex;
