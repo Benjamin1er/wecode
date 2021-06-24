@@ -1,21 +1,34 @@
 
 /*Général*/
   @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Croissant+One&display=swap');
 
   * {
-
-    font-family: 'Roboto';
+    font-family: 'Courgette';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
   }
+
 /*En tête du site*/
 
-.titleAnim {
-  color: rgba(124, 0, 155, 1);
+.titleAnim {  
+  font-family: 'Croissant One';
   font-size: 15vw;
-  text-shadow: 2px 2px white, 2px -2px white, -2px 2px white, 2px -2px white;
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);          
+    
+               
 }
 #target {  
   position: absolute;
@@ -23,20 +36,18 @@
   margin: auto;
   top: auto;
 }
+body.index {
+  background-color: #F0FFFF;
+}
+  
 
-  /*Navbar*/
-  .b-pink {
-    text-align: center;
-  }
-
-
-  #description {
+#description {
     padding: 0% 10% 0% 5%;
     font-size: 3vh;
     text-shadow: 2px 2px black, 2px 2px black, 2px 2px black, 2px 2px black;
     text-transform: uppercase;
     text-align: center;
-  }
+}
 
 
   .navbar {
@@ -44,6 +55,7 @@
   }  
 
   .nav-menu {
+    z-index: 1000;
     opacity: 75%; 
     height: auto;
     position: fixed;
@@ -56,6 +68,7 @@
 
 
   .hamburger {
+    z-index: 2000;
     display: flex;
     justify-content: space-around;
     opacity: 75%;
@@ -88,9 +101,7 @@
     bottom: 50px;
   }
 
-  .nav-item {  
-    margin: 0.5em 0;
-  }
+
 
   /*Image d'accueil*/
     .header {
@@ -99,16 +110,16 @@
       justify-content: center;
       height: 35vh;
       color: white;
-      background-image: url("assets/header.jpg");
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%), url("assets/header.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       font-size: 8vw;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
       
     }
     
     #grosTitre {
+      perspective: 9999px;
+      transform-style: preserve-3d;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -117,8 +128,10 @@
   /*Articles*/
     a {
       text-decoration: none;
-      color: #ffffff;
-      }
+      font-weight: bold;
+      color: black;
+      font-family: Courgette;
+    }
 
     h1 {
       text-align: center;
@@ -144,7 +157,6 @@
     width: 70%;
     height: 25vh;
     text-align: center;
-    padding: auto;
     margin: 5%;
     display: flex;
     font-family: 'Croissant One', cursive;
@@ -157,10 +169,36 @@
 
   
   a.indexArticle {
-    font-size: 8vw;
+     font-size: 8vw;
     text-decoration: none;
-    color: #ffffff;
+    /* color: #CFC547; */
+    color: #fff;
+    display : flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* text-shadow: 10px 10px 25px rgb(81,67,21),
+    -10px 10px 25px rgb(81,67,21),
+    -10px -10px 25px rgb(81,67,21),
+    10px -10px 25px rgb(81,67,21); */
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgba(124, 0, 155, 1),
+    0 0 82px rgba(124, 0, 155, 1),
+    0 0 92px rgba(124, 0, 155, 1),
+    0 0 102px rgba(124, 0, 155, 1),
+    0 0 151px rgba(124, 0, 155, 1);
+
+   
+
+
   }
+  
+  
+
 
   #dev-web {
     background-image: url("./assets/dessin web.jpg");
@@ -191,6 +229,7 @@
     flex-direction: column;
     align-items: center;
     margin: 5% 0 10% 0;
+    
   }
 
 
@@ -226,12 +265,7 @@ h3 {
   color: #ffffff;
 }
 
-article {
-    padding: 5%;
-}
-.article {
-  padding: 5%;
-}
+
 .text-article {
   font-size: 18px;
   text-align: left;
@@ -273,9 +307,10 @@ article {
     text-align: center;
 }
 .contactUs {
-    padding: 30px;
-    font-size: 40px;
-    text-decoration: underline;
+  color: black;
+  padding: 30px;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 .nav-menu {
@@ -399,6 +434,10 @@ li a:hover {
   width: 90%;
   padding: 6% 0;
 }
+.gamesTextArticle {
+  font-family: 'Courgette', cursive;
+  font-size: 16px;
+}
 .gamesExampleLegende {
   font-size: 14px;
   text-align: center;
@@ -431,10 +470,6 @@ li a:hover {
   .gamesExample{
     margin: 10px 10px 0 10px;
     text-align: center;
-  }
-  .gamesTextArticle {
-    font-family: 'Courgette', cursive;
-    font-size: 16px;
   }
   .gamesArticle {
       text-align: justify;
@@ -474,12 +509,26 @@ li a:hover {
   .titleAnim {
     font-size: 5vw;
   }
+
+  .soft-intro {
+    
+    width: 70%;
+    
+  }
+ 
+  .softTextArticle {
+    margin: auto;
+    width: 70%;
+  }
+
   #grosTitre {
     justify-content: flex-start;
   }
+  
   .header {
     height: 60vh;
   }
+
   .header-picture {
     width: 60%;
     height: 600px;
@@ -491,7 +540,7 @@ li a:hover {
   h3 {
     font-size: 50px;
   }
-  .majortitle {
+  .gamesmajortitle {
     padding: 8% 4%;
     font-size: 35px;
   }
@@ -553,7 +602,24 @@ input[type="submit"] {
 #message {
     height: 120px;
 }
-/* ---------------------------------page software ------------------------------------ */
+/* ---------------------------------page software ---------------------------------- */
+
+.softTextArticle {
+  padding: 1%;
+  font-size: 16px;
+}
+.softArticle {
+  text-align: justify;
+  width: 90%;
+  padding: 5% 0;
+}
+
+#softBloc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1% 0;
+}
 
 .software-header {
   height: 400px;
@@ -587,7 +653,9 @@ input[type="submit"] {
 }
 
 .soft-title {
-  padding: 20px;
+  margin: auto;
+  width: 70%;
+  padding: 2%;
  color: rgb(0, 0, 0);
 }
 
@@ -607,11 +675,12 @@ input[type="submit"] {
 }
 .soft-intro {
   margin: auto;
-  width: 75%;
+  width: 90%;
   padding: 20px;
 }
 .soft-pict {
   margin: 0 5% 0 5%;
+  padding: 1%;
 }
 .softH4 {
   padding: 10px;
@@ -683,22 +752,6 @@ h2 {
     }
 }
 
-@media  screen and (min-width: 1500px) {
-
-   .nav-menu {
-    display: flex;
-    justify-content: space-around;  
-    top: 0;  
-    bottom: auto;
-    height: 50px;
-  }
-  .hamburger {
-    visibility: hidden;
-  }
-  .nav-item {  
-    margin: 0;
-  }
-}
 
 @media screen and (min-width: 768px) {
 
@@ -816,7 +869,6 @@ a {
 }
 
 #aiPic1 {
-  border-radius: 10px;
   width: 700px;
   height: 350px;
 }
@@ -899,7 +951,7 @@ a {
     padding: 10px;
     border-radius: 10px;
     width: 400px;
-    height: 200px;
+    height: 250px;
   }
 
 }
@@ -930,3 +982,38 @@ a {
 }
 
 
+.roboticParallax {
+  width: 100%;
+  height: 150px;
+  background: url(assets/robotParallax.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.webDevParallax {
+  width: 100%;
+  height: 150px;
+  background: url(assets/webDevParallax.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.webDevParallax2 {
+  width: 100%;
+  height: 150px;
+  background: url(assets/encoreUnParallax.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
