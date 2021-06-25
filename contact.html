@@ -8,13 +8,25 @@
     <title>Contactez Nous</title>
   </head>
   <body>
-       
-    <main class="container">
-      <div class="ctn">    
-        <a class="button b-pink" href="./index.html">WECODE</a>        
-      </div> 
-      <img src="assets/7persons.jpg" alt="ContactUs picture" />
-      <h3 class="contactUs">Contactez Nous</h3>
+    <header class="headergame">       
+      <nav class="navbar">
+        <ul class="nav-menu b-pink">          
+          <li class="nav-item"><a href="./dev-web.html" class="nav-link">Web</a></li>
+          <li class="nav-item"><a href="./video-games.html" class="nav-link">Jeux Videos</a></li>
+          <li class="nav-item"><a href="./software.html" class="nav-link">Logiciels</a></li>
+          <li class="nav-item"><a href="./robotic.html" class="nav-link">Robotique</a></li>
+          <li class="nav-item"><a href="./ai.html" class="nav-link">Intelligence artificielle</a></li>
+          <li class="nav-item"><a href="./blockchain.html" class="nav-link">Blockchain</a></li>          
+        </ul>
+        <div class="hamburger b-pink">          
+          <a href="./index.html"><img class="logo-navbar" src="./assets/home.png" alt="logo home"></a>       
+          <img class="logo-navbar hamburger-click" src="./assets/hamburger.png" alt="logo hamburger">       
+          <a href="./contact.html"><img class="logo-navbar" src="./assets/contact.png" alt="logo contact"></a>       
+        </div>
+      </nav>
+      <h2>Contactez Nous</h2> 
+      <img class="header-picture" src="assets/7persons.jpg" alt="ContactUs picture" />
+    </header>
       <section id="contact">
         <form id="contactForm">
           <label for="name">Prénom:</label><br />
@@ -37,27 +49,7 @@
           <input id="submit" type="submit" value="Submit" />
         </form>
       </section>
-    </main>
-    
-    <nav class="navbar">
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="./dev-web.html" class="nav-link">Web</a></li>
-        <li class="nav-item"><a href="./video-games.html" class="nav-link">Jeux Videos</a></li>
-        <li class="nav-item"><a href="./software.html" class="nav-link">Logiciels</a></li>
-        <li class="nav-item"><a href="./robotic.html" class="nav-link">Robotique</a></li>
-        <li class="nav-item"><a href="./ai.html" class="nav-link">Intelligence artificielle</a></li>
-        <li class="nav-item"><a href="./blockchain.html" class="nav-link">Blockchain</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-    <!-- <a href="#" class="politics">Mentions légales et Politique de confidentialité</a> -->
-    <footer>
-    </footer>
+    </main>      
     <script src="script.js"></script>
   </body>
   </html>

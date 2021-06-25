@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <title>Développement Web</title>
-</head>
-
-<body>
-    <header id="webHeader">
-        <h2>Développement Web</h2>
-    </header>
-    <section class="container">
-        <article class="blocarticle">
-            <h3 class="title-bloc"> Qu'est-ce que le développement web ? </h3>
-            <p class="text-article">Apparu avec Internet, le développement web fait référence au processus d’écriture d’un site ou d’une page web dans un langage technique. Il s’agit d’une étape incontournable pour qu’un contenu soit mis en ligne et atteigne ses lecteurs. </br>
-                Le développement web repose sur l’utilisation des langages (HTML/CSS, JavaScript, PHP…) pour écrire des programmes qui sont ensuite exécutés par les ordinateurs. Les instructions sont mises en place sur Internet et sont effectuées sur des serveurs</p>
-            <img class="webImg" src="assets/dessin web.jpg" alt="image montrant un développeur web en dessin">
-        </article>
-        <article class="blocarticle">
-            <h3 class="title-bloc"> Les différents types de développeurs </h3>
-
-            <p class="text-article"> Les trois principaux types de développeurs sont front-end, back-end et full-stack. </br>
-                Les développeurs front-end s’occupent de la partie d’un site Web que les gens voient et avec laquelle ils interagissent. Les développeurs back-end sont responsables eux, du code en arrière-plan. Ce code va servir à contrôler la façon dont un site Web
-                va se charger et s’exécuter. Les développeurs full-stack font un peu de tout .</p>
-
-            <img id="webImg2" src="assets/iceberg-front-end-back-end-developers.jpeg" alt="image montrant une explication entre front et back end">
-        </article>
-        <h3 class="title-bloc"> Les différents langages utilisé en développement web </h3>
-
-        <p class="text-article"> <span>HTML</span> permet d’intégrer du contenu à un site Web tout en le divisant en titres, paragraphes et tableaux. C’est un langage essentiel. Il indique au site Web quel contenu afficher et, dans une certaine mesure, comment l’afficher. Des
-            commandes telles que «lien», «image» ou «vidéo», indiquent à votre navigateur quoi afficher, d’où obtenir le contenu et comment l’afficher.</br>
-            <span>CSS</span> est utilisé en conjonction avec HTML. Alors que HTML indique à la page Web quel contenu afficher, CSS indique à la page Web comment afficher le contenu – c’est un langage de «style». Il va notamment permettre le changement
-            de couleurs, de polices, le positionnement des éléments ainsi que le changement de taille du texte.</br>
-            <span>JavaScript</span> va quand à lui, rendre votre site Web réactif, interactif et attrayant pour vos visiteurs. Un développeur JavaScript va travailler sur des extraits de code JavaScript qui, souvent seront intégrés au code source HTML
-            d’un site Web. Bien qu’il ait toujours été un langage front-end, JavaScript devient également de plus en plus populaire pour le développement principal.</br>
-
-            <a class="webLink" href="https://www.net-concept.fr/actualites/le-developpement-web-cest-quoi/" target="_blank"> Pour plus d'informations, ce lien est disponible</a>
-
-        </p>
-    </section>
-    <nav class="navbar">
-        <ul class="nav-menu b-pink">
-            <li class="nav-item"><a href="./dev-web.html" class="nav-link">Web</a></li>
-            <li class="nav-item"><a href="./video-games.html" class="nav-link">Jeux Videos</a></li>
-            <li class="nav-item"><a href="./software.html" class="nav-link">Logiciels</a></li>
-            <li class="nav-item"><a href="./robotic.html" class="nav-link">Robotique</a></li>
-            <li class="nav-item"><a href="./ai.html" class="nav-link">Intelligence artificielle</a></li>
-            <li class="nav-item"><a href="./blockchain.html" class="nav-link">Blockchain</a></li>
-            <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="hamburger b-pink">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-    <footer>
-        <a href="#">Mentions légales et Politique de confidentialité</a>
-    </footer>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <title>Développement Web</title>
+    </head>
+    <body>
+        <header class="headergame">      
+            <nav class="navbar">
+              <ul class="nav-menu b-pink">
+                <li class="nav-item"><a href="./dev-web.html" class="nav-link">Web</a></li>
+                <li class="nav-item"><a href="./video-games.html" class="nav-link">Jeux Videos</a></li>
+                <li class="nav-item"><a href="./software.html" class="nav-link">Logiciels</a></li>
+                <li class="nav-item"><a href="./robotic.html" class="nav-link">Robotique</a></li>
+                <li class="nav-item"><a href="./ai.html" class="nav-link">Intelligence artificielle</a></li>
+                <li class="nav-item"><a href="./blockchain.html" class="nav-link">Blockchain</a></li>
+              </ul>
+              <div class="hamburger b-pink">          
+                <a href="./index.html"><img class="logo-navbar" src="./assets/home.png" alt=""></a>       
+                <img class="logo-navbar hamburger-click" src="./assets/hamburger.png" alt="">       
+                <a href="./contact.html"><img class="logo-navbar" src="./assets/contact.png" alt=""></a>       
+              </div>
+            </nav>
+            <h2>Développement Web</h2>
+            <img class="header-picture" src="assets/webpage.jpg" alt="Header picture web" />
+            <p class="gamesMajortitle">
+              Dans cette rubrique, vous découvrirez les langages utilisés pour développer du web. 
+            </p>
+        </header>
+        <section class="gamesContainer">
+            <article class="gamesBlocarticle">
+                <div class="webDevParallax2">
+                    <h3>Qu'est-ce que le développement web ?</h3>
+                </div>
+                <div class="gamesArticle">
+                    <p class="gamesTextArticle"> Apparu avec Internet, le développement web fait référence au processus d’écriture d’un site ou d’une page web dans un langage technique. Il s’agit d’une étape incontournable pour qu’un contenu soit mis en ligne et atteigne ses lecteurs.
+                        Le développement web repose sur l’utilisation des langages (HTML/CSS, JavaScript, PHP…) pour écrire des programmes qui sont ensuite exécutés par les ordinateurs. Les instructions sont mises en place sur Internet et sont effectuées sur des serveurs.
+                    </p> 
+                </div>
+                <div class="gamesExample">
+                    <img class='gameImg' src="assets/dessin web.jpg" alt="dessin web" /> 
+                </div>     
+            </article>
+            <article class="gamesBlocarticle gamesBackgroundArticle">
+                <div class="webDevParallax2">
+                    <h3>Les différents types de développeurs</h3>
+                </div>
+                <div class="gamesArticle">
+                    <p class="gamesTextArticle">Les trois principaux types de développeurs sont front-end, back-end et full-stack. Les développeurs front-end s’occupent de la partie d’un site Web que les gens voient et avec laquelle ils interagissent. Les développeurs back-end sont responsables eux, du code en arrière-plan. Ce code va servir à contrôler la façon dont un site Web va se charger et s’exécuter. Les développeurs full-stack font un peu de tout.
+                    </p>
+                </div>
+                <div class="gamesExample">
+                    <img class='gameImg' src="assets/iceberg-front-end-back-end-developers.jpeg" alt="image montrant une explication entre front et back end" />
+                </div>
+            </article>
+            <article class="gamesBlocarticle">
+                <div class="webDevParallax2">
+                    <h3>Les différents langages utilisés</h3>
+                </div>
+                <div class="gamesArticle">
+                <p class="gamesTextArticle">
+                    <span>HTML</span> permet d’intégrer du contenu à un site Web tout en le divisant en titres, paragraphes et tableaux. C’est un langage essentiel. Il indique au site Web quel contenu afficher et, dans une certaine mesure, comment l’afficher. Des
+                    commandes telles que «lien», «image» ou «vidéo», indiquent à votre navigateur quoi afficher, d’où obtenir le contenu et comment l’afficher.</br>
+                    <span>CSS</span> est utilisé en conjonction avec HTML. Alors que HTML indique à la page Web quel contenu afficher, CSS indique à la page Web comment afficher le contenu – c’est un langage de «style». Il va notamment permettre le changement
+                    de couleurs, de polices, le positionnement des éléments ainsi que le changement de taille du texte.</br>
+                    <span>JavaScript</span> va quand à lui, rendre votre site Web réactif, interactif et attrayant pour vos visiteurs. Un développeur JavaScript va travailler sur des extraits de code JavaScript qui, souvent seront intégrés au code source HTML
+                    d’un site Web. Bien qu’il ait toujours été un langage front-end, JavaScript devient également de plus en plus populaire pour le développement principal.</br>
+                </p>
+                <a class="gamesSuiteArticle gamesSuiteArticleColor" href="https://www.net-concept.fr/actualites/le-developpement-web-cest-quoi/" target="_blank">Suite de l'article ici...</a>
+                </div>
+                <div class="gamesExample">
+                <img class='gameImg' src="assets/webDev.png" alt="langage web" />
+                </div>
+          </article>
+        </section>
     <script src="script.js"></script>
 </body>
 
